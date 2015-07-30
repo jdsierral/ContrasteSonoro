@@ -18,7 +18,7 @@
 /*
 /*
 /*
-*/
+ */
 //=========================================================================//
 
 import oscP5.*;
@@ -77,7 +77,7 @@ PVector kinectPos1 = new PVector ();
 
 int fps;
 
-boolean stabilization = true;
+boolean stabilization = false;
 boolean isLeft1, isRight1;
 float leapGrabL1;
 PVector leapPosL1 = new PVector ();
@@ -137,28 +137,35 @@ void setup() {
 void draw() {
   background(255);
   fps = leap.getFrameRate();
-  
+
   if (leap.isConnected())
   {
     leapAnalisis();
   }
-  
+
   if (kinectEnabled)
   {
     kinectAnalisis();
   }
   
-  if (netEnabled)
+    if (netEnabled)
   {
     oscRoutine();
   }
-  
-  
 
+  fill(255, 0, 0);
+  ellipse(leapPosL1.x, leapPosL1.y, leapPosL1.z, leapPosL1.z);
+  fill(0, 255, 0);
+  ellipse(leapPosR1.x, leapPosR1.y, leapPosR1.z, leapPosR1.z);
+  fill(0, 0, 255);
+  ellipse(kinectPos1.x, kinectPos1.y, kinectPos1.z, kinectPos1.z);
 
-
-
-
+  fill(255, 255, 0);
+  ellipse(leapPosL2.x, leapPosL2.y, leapPosL2.z, leapPosL2.z);
+  fill(0, 255, 255);
+  ellipse(leapPosR2.x, leapPosR2.y, leapPosR2.z, leapPosR2.z);
+  fill(255, 0, 255);
+  ellipse(kinectPos2.x, kinectPos2.y, kinectPos2.z, kinectPos2.z);
 
   //Ref Text
   fill(100);
@@ -175,6 +182,9 @@ void keyPressed()
     info = ++info % 3;
   }
 }
+//=========================================================================//
+
+
 
 //=========================================================================//
 
