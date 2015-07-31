@@ -45,12 +45,21 @@ Kinect kinect;
 //=========================================================================//
 //Global Variables
 
+boolean netEnabled = true;
+boolean leapEnabled = true;
+boolean kinectEnabled = true;
+boolean dummyDrawEnabled = true;
+boolean refTextEnabled = true;
 //UDP STUFF
 
-boolean netEnabled = true;
 
-int[] port = {12000, 12001, 12002};
-String[] IP = {"192.168.0.100", "192.168.0.101", "192.168.0.102"};
+
+int[] port = {
+  12000, 12001, 12002
+};
+String[] IP = {
+  "192.168.0.100", "192.168.0.101", "192.168.0.102"
+};
 
 String myIP = NetInfo.lan();
 int myPort;
@@ -60,7 +69,7 @@ int myPort;
 
 //KINECT STUFF//
 
-boolean kinectEnabled = true; 
+
 
 float[] depthLookUp = new float[2048];
 int kinectSize = 307200;  //640 x 480
@@ -109,7 +118,7 @@ void setup() {
   size (640, 480);
   textPos = new PVector (20, height - 200);
   background(255);
-  
+
   for (int i = 0; i <= 2; i++)
   {
     if (myIP.equals(IP[i]))
@@ -148,7 +157,7 @@ void draw() {
   background(255);
   fps = leap.getFrameRate();
 
-  if (leap.isConnected())
+  if (leapEnabled)
   {
     leapAnalisis();
   }
@@ -157,31 +166,24 @@ void draw() {
   {
     kinectAnalisis();
   }
-  
-    if (netEnabled)
+
+  if (netEnabled)
   {
     oscRoutine();
   }
 
-  fill(255, 0, 0);
-  ellipse(leapPosL1.x, leapPosL1.y, leapPosL1.z, leapPosL1.z);
-  fill(0, 255, 0);
-  ellipse(leapPosR1.x, leapPosR1.y, leapPosR1.z, leapPosR1.z);
-  fill(0, 0, 255);
-  ellipse(kinectPos1.x, kinectPos1.y, kinectPos1.z, kinectPos1.z);
+  if (dummyDrawEnabled)
+  {
+    dummyDraw();
+  }
 
-  fill(255, 255, 0);
-  ellipse(leapPosL2.x, leapPosL2.y, leapPosL2.z, leapPosL2.z);
-  fill(0, 255, 255);
-  ellipse(leapPosR2.x, leapPosR2.y, leapPosR2.z, leapPosR2.z);
-  fill(255, 0, 255);
-  ellipse(kinectPos2.x, kinectPos2.y, kinectPos2.z, kinectPos2.z);
-
-  //Ref Text
-  fill(100);
-  text(leapText(info), textPos.x, textPos.y);
-  text(kinectText(info), textPos.x + width/2, textPos.y);
-  text(myIP + ", " + myPort, 50, 50);
+  if (refTextEnabled)
+  {
+    fill(100);
+    text(leapText(info), textPos.x, textPos.y);
+    text(kinectText(info), textPos.x + width/2, textPos.y);
+    text(myIP + ", " + myPort, 50, 50);
+  }
 }
 
 //=========================================================================//
