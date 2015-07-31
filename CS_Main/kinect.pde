@@ -24,4 +24,18 @@ Auto set threshold for areas to avoid after until analisis..
 Constrain depth limits
 
 
+For (int x = 0; x < kinect.width; x++)
+{
+  Counter++;
+
+  If (depth[counter])
+  Sum.x += x;
+  Sum.y += y;
+}
+
+Depth[pos];
+
+For (int i = 0; i < depth.kenght; I++
+
+
 */
