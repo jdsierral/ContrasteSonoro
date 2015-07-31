@@ -45,21 +45,17 @@ Kinect kinect;
 //=========================================================================//
 //Global Variables
 
-boolean netEnabled = true;
-boolean leapEnabled = true;
+boolean netEnabled = false;
+boolean leapEnabled = false;
 boolean kinectEnabled = true;
-boolean dummyDrawEnabled = true;
+boolean dummyDrawEnabled = false;
 boolean refTextEnabled = true;
 //UDP STUFF
 
 
 
-int[] port = {
-  12000, 12001, 12002
-};
-String[] IP = {
-  "192.168.0.100", "192.168.0.101", "192.168.0.102"
-};
+int[] port = {12000, 12001, 12002};
+String[] IP = {"192.168.0.100", "192.168.0.101", "192.168.0.102"};
 
 String myIP = NetInfo.lan();
 int myPort;
@@ -180,7 +176,7 @@ void draw() {
   if (refTextEnabled)
   {
     fill(100);
-    text(leapText(info), textPos.x, textPos.y);
+//    text(leapText(info), textPos.x, textPos.y);
     text(kinectText(info), textPos.x + width/2, textPos.y);
     text(myIP + ", " + myPort, 50, 50);
   }
@@ -190,9 +186,26 @@ void draw() {
 
 void keyPressed()
 {
-  if (key == '0')
+  switch (key)
   {
-    info = ++info % 3;
+  case '0' : 
+    info = ++info % 2; 
+    break;
+  case '1' : 
+    netEnabled = !netEnabled;
+    break;
+  case '2' :
+    leapEnabled = !leapEnabled; 
+    break;
+  case '3' :
+    kinectEnabled = !kinectEnabled; 
+    break;
+  case '4' :
+    dummyDrawEnabled = !dummyDrawEnabled; 
+    break;
+  case '5' :
+    refTextEnabled = !refTextEnabled; 
+    break;
   }
 }
 //=========================================================================//

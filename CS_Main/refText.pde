@@ -2,7 +2,7 @@ String leapText (int amount)
 {
   String ref = "";
 
-  if (amount >= 1)
+  if (amount >= 0)
   {
     ref = 
  "LeapPosL1 = " + "("  + str((int)leapPosL1.x) 
@@ -38,7 +38,7 @@ String leapText (int amount)
                 ;
 
   }
-  if (amount >= 2)
+  if (amount >= 1)
   {
     ref = ref +  
       "fps = " + str(fps) + "\n";
@@ -54,7 +54,7 @@ String kinectText (int amount)
 {
   String ref = "";
   
-  if (amount >= 1)
+  if (amount >= 0)
   {
     ref = 
     "kinectPos1 = " + "("  + kinectPos1.x + 
@@ -67,7 +67,7 @@ String kinectText (int amount)
                       ;
                       
   }
-  if (amount >= 2)
+  if (amount >= 1)
   {
     ref = ref;
   }
