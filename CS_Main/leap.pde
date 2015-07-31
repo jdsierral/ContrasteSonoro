@@ -10,7 +10,7 @@ void leapAnalisis()
         leapPosL1 = hand.getPosition();
       }
       leapDynL1 = hand.getDynamics();
-      leapGrabL1 = hand.getSphereRadius();
+      leapGrabL1 = hand.getGrabStrength();
     } 
     if (hand.isRight())
     {
@@ -21,7 +21,7 @@ void leapAnalisis()
         leapPosR1 = hand.getPosition();
       }
       leapDynR1 = hand.getDynamics();
-      leapGrabR1 = hand.getSphereRadius();
+      leapGrabR1 = hand.getGrabStrength();
     }
   }
 }
