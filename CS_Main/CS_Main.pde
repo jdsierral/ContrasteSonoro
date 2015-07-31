@@ -110,7 +110,7 @@ void setup() {
   textPos = new PVector (20, height - 200);
   background(255);
   
-  for (int i = 0; i < 2; i++)
+  for (int i = 0; i <= 2; i++)
   {
     if (myIP.equals(IP[i]))
     {
@@ -181,7 +181,7 @@ void draw() {
   fill(100);
   text(leapText(info), textPos.x, textPos.y);
   text(kinectText(info), textPos.x + width/2, textPos.y);
-  text(myIP, 50, 50);
+  text(myIP + ", " + myPort, 50, 50);
 }
 
 //=========================================================================//

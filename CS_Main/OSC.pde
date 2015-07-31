@@ -25,11 +25,11 @@ void oscRoutine()
   {
     osc.send(bundleMsg, CS0);
   }
-  if (!myIP.equals(IP[0]))
+  if (!myIP.equals(IP[1]))
   {
     osc.send(bundleMsg, CS1);
   }
-  if (!myIP.equals(IP[0]))
+  if (!myIP.equals(IP[2]))
   {
     osc.send(bundleMsg, CS2);
   }
