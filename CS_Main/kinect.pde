@@ -15,3 +15,13 @@ void kinectAnalisis ()
   
 }
 
+/* new ideas
+
+Average position among certain number o closer pixels to improve tracking.
+
+Auto set threshold for areas to avoid after until analisis..
+
+Constrain depth limits
+
+
+*/
