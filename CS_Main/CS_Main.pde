@@ -50,8 +50,10 @@ Kinect kinect;
 boolean netEnabled = true;
 
 int[] port = {12000, 12001, 12002};
-String[] IPs = {"192.168.0.100", "192.168.0.101", "192.168.0.102"};
+String[] IP = {"192.168.0.100", "192.168.0.101", "192.168.0.102"};
 
+String myIP = NetInfo.lan();
+int myPort;
 
 //=========================================================================//
 
@@ -107,12 +109,20 @@ void setup() {
   size (640, 480);
   textPos = new PVector (20, height - 200);
   background(255);
+  
+  for (int i = 0; i < 2; i++)
+  {
+    if (myIP.equals(IP[i]))
+    {
+      myPort = port[i];
+    }
+  }
 
-  osc = new OscP5(this, port[0]);    //this mac port;
+  osc = new OscP5(this, myPort);    //this mac port;
 
-  CS0 = new NetAddress(IPs[0], port[0]);    //Admin for TroubleShooting
-  CS1 = new NetAddress(IPs[1], port[0]);
-  CS2 = new NetAddress(IPs[2], port[0]);
+  CS0 = new NetAddress(IP[0], port[0]);    //Admin for TroubleShooting
+  CS1 = new NetAddress(IP[1], port[1]);
+  CS2 = new NetAddress(IP[2], port[2]);
 
   //===
 
@@ -171,6 +181,7 @@ void draw() {
   fill(100);
   text(leapText(info), textPos.x, textPos.y);
   text(kinectText(info), textPos.x + width/2, textPos.y);
+  text(myIP, 50, 50);
 }
 
 //=========================================================================//
