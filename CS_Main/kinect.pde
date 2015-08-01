@@ -4,14 +4,11 @@ void kinectAnalisis ()
   PImage img = kinect.getDepthImage();
   int[] depth = kinect.getRawDepth();
   
+  image(kinect.getDepthImage(), 0, 0);
+  
   // time average for comparison?
   
-  maxIndex = maxValueIndex(depth, kinectSize);
   
-  max.x = getX(maxIndex, img.width);
-  max.y = getY(maxIndex, img.width);
-  
-  loadPixels();
   
 }
 
@@ -35,7 +32,10 @@ For (int x = 0; x < kinect.width; x++)
 
 Depth[pos];
 
-For (int i = 0; i < depth.kenght; I++
+For (int i = 0; i < depth.kenght; i++)
+{
+  
+}
 
 
 */

@@ -46,16 +46,20 @@ Kinect kinect;
 //Global Variables
 
 boolean netEnabled = false;
-boolean leapEnabled = false;
+boolean leapEnabled = true;
 boolean kinectEnabled = true;
-boolean dummyDrawEnabled = false;
+boolean dummyDrawEnabled = true;
 boolean refTextEnabled = true;
 //UDP STUFF
 
 
 
-int[] port = {12000, 12001, 12002};
-String[] IP = {"192.168.0.100", "192.168.0.101", "192.168.0.102"};
+int[] port = {
+  12000, 12001, 12002
+};
+String[] IP = {
+  "192.168.0.100", "192.168.0.101", "192.168.0.102"
+};
 
 String myIP = NetInfo.lan();
 int myPort;
@@ -79,6 +83,8 @@ boolean meanFlag = false;
 boolean stndFlag = false; 
 
 PVector kinectPos1 = new PVector ();
+
+int deg = 15; 
 
 // LEAP STUFF
 
@@ -133,6 +139,7 @@ void setup() {
 
   kinect = new Kinect (this);
   kinect.start();
+  kinect.tilt(deg);
 
   //===
 
@@ -176,7 +183,7 @@ void draw() {
   if (refTextEnabled)
   {
     fill(100);
-//    text(leapText(info), textPos.x, textPos.y);
+    //    text(leapText(info), textPos.x, textPos.y);
     text(kinectText(info), textPos.x + width/2, textPos.y);
     text(myIP + ", " + myPort, 50, 50);
   }
@@ -206,10 +213,31 @@ void keyPressed()
   case '5' :
     refTextEnabled = !refTextEnabled; 
     break;
+  case CODED  :
+
+    if (keyCode == UP)
+    {
+      deg++;
+    } else if (keyCode == DOWN)
+    {
+      deg--;
+    }
+    kinect.tilt(deg);
+    break;
   }
 }
 //=========================================================================//
-
+/*
+else if (key == CODED) {
+ if (keyCode == UP) {
+ deg++;
+ } 
+ else if (keyCode == DOWN) {
+ deg--;
+ }
+ deg = constrain(deg,0,30);
+ kinect.tilt(deg);
+ */
 
 
 //=========================================================================//
