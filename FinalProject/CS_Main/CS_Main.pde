@@ -46,10 +46,10 @@ Kinect kinect;
 //Global Variables
 
 boolean netEnabled = false;
-boolean leapEnabled = true;
-boolean kinectEnabled = true;
-boolean dummyDrawEnabled = true;
-boolean refTextEnabled = true;
+boolean leapEnabled = false;
+boolean kinectEnabled = false;
+boolean dummyDrawEnabled = false;
+boolean refTextEnabled = false;
 //UDP STUFF
 
 
@@ -214,7 +214,6 @@ void keyPressed()
     refTextEnabled = !refTextEnabled; 
     break;
   case CODED  :
-
     if (keyCode == UP)
     {
       deg++;
@@ -227,17 +226,7 @@ void keyPressed()
   }
 }
 //=========================================================================//
-/*
-else if (key == CODED) {
- if (keyCode == UP) {
- deg++;
- } 
- else if (keyCode == DOWN) {
- deg--;
- }
- deg = constrain(deg,0,30);
- kinect.tilt(deg);
- */
+
 
 
 //=========================================================================//
@@ -248,4 +237,3 @@ void stop() {
 }
 
 //=========================================================================//
-
