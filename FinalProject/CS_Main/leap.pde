@@ -1,3 +1,8 @@
+void leapSetup()
+{
+  leap = new LeapMotion(this);
+}
+
 void leapAnalisis()
 {
   for (Hand hand : leap.getHands ()) {

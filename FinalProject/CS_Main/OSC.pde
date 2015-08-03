@@ -1,5 +1,22 @@
 //       SEND
 
+void oscSetup()
+{
+   for (int i = 0; i <= 2; i++)
+  {
+    if (myIP.equals(IP[i]))
+    {
+      myPort = port[i];
+    }
+  }
+
+  osc = new OscP5(this, myPort);    //this mac port;
+
+  CS0 = new NetAddress(IP[0], port[0]);    //Admin for TroubleShooting
+  CS1 = new NetAddress(IP[1], port[1]);
+  CS2 = new NetAddress(IP[2], port[2]);
+}
+
 void oscRoutine()
 {
   OscBundle bundleMsg = new OscBundle();

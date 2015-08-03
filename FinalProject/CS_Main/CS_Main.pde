@@ -12,7 +12,7 @@
 /*          TODO LIST
 /*  - insert Constrains in leap variables
 /*  - insert mappings in leap variables
-/*  - design osc messages
+/*  - 
 /*
 /*
 /*
@@ -37,25 +37,23 @@ OscP5 osc;
 NetAddress CS0;  //Contraste Sonoro Admin
 NetAddress CS1;  //Contraste Sonoro 1
 NetAddress CS2;  //Contraste Sonoro 2
-
 LeapMotion leap;
-
 Kinect kinect;
 
 //=========================================================================//
-//Global Variables
+////////////////////////////////GLOBAL VARIABLES/////////////////////////////
+//=========================================================================//
 
-int[] setup = { 
-  1, 1, 1, 1, 0
+int[] setup = {
+  0, 0, 0, 0, 0
 };
+
 boolean netEnabled;
 boolean leapEnabled;
 boolean kinectEnabled;
 boolean dummyDrawEnabled;
 boolean refTextEnabled;
 //UDP STUFF
-
-
 
 int[] port = {
   12000, 12001, 12002
@@ -68,32 +66,33 @@ String myIP = NetInfo.lan();
 int myPort;
 
 //=========================================================================//
+//////////////////////////////////KINECT STUFF///////////////////////////////
+//=========================================================================//
 
-
-//KINECT STUFF//
-
-
-
+int meanSize = 10; 
+int meanLength = 50;
 float[] depthLookUp = new float[2048];
+
+int deg = 15;
 int kinectSize = 307200;  //640 x 480
-int maxIndex;
-float r = 20;
+int kinectWidth = 640;
+int kinectHeight = 480;
+
+int[] depth = new int[kinectSize];
+//int maxIndex;
+
 int minThreshold = 5;
 int maxThreshold = 200;
 int speed = 5;
 PVector max = new PVector ();
-boolean meanFlag = false;
-boolean stndFlag = false;
-
-int meanSize = 10; 
+boolean initState = false;
 
 PVector kinectPos1 = new PVector ();
+PVector kinectPos2 = new PVector ();
 
-int deg = 15; 
-
-// LEAP STUFF
-
-int fps;
+//=========================================================================//
+////////////////////////////////// LEAP STUFF////////////////////////////////
+//=========================================================================//
 
 boolean stabilization = false;
 boolean isLeft1, isRight1;
@@ -105,8 +104,6 @@ PVector leapPosR1 = new PVector ();
 PVector leapDynR1 = new PVector ();
 //=========================================================================//
 
-PVector kinectPos2 = new PVector ();
-
 boolean isLeft2, isRight2;
 float leapGrabL2;
 PVector leapPosL2 = new PVector ();
@@ -116,72 +113,38 @@ PVector leapPosR2 = new PVector ();
 PVector leapDynR2 = new PVector ();
 
 //=========================================================================//
+////////////////////////////////GRAPHIC STUFF////////////////////////////////
+//=========================================================================//
 
 PVector textPos;
 int info = 0;
+
+//=========================================================================//
+//=========================================================================//
+//=========================================================================//
 //=========================================================================//
 
 void setup() {
-  if (setup[0]==1) {
-    netEnabled = true;
+  if (dummyDrawEnabled)
+  {
+    size (1024, 640, P3D);
   } else {
-    netEnabled = false;
+    size (1024, 640);
   }
-  if (setup[1]==1) {
-    leapEnabled = true;
-  } else {
-    leapEnabled = false;
-  }
-  if (setup[2]==1) {
-    kinectEnabled = true;
-  } else {
-    kinectEnabled = false;
-  }
-  if (setup[3]==1) {
-    dummyDrawEnabled = true;
-  } else {
-    dummyDrawEnabled = false;
-  }
-  if (setup[4]==1) {
-    refTextEnabled = true;
-  } else {
-    refTextEnabled = false;
-  }
-  
-  size (640, 480, P3D);
-  textPos = new PVector (20, height - 200);
   background(255);
 
-  for (int i = 0; i <= 2; i++)
+  initRoutine();
+
+  if (netEnabled)
   {
-    if (myIP.equals(IP[i]))
-    {
-      myPort = port[i];
-    }
+    oscSetup();
   }
 
-  osc = new OscP5(this, myPort);    //this mac port;
-
-  CS0 = new NetAddress(IP[0], port[0]);    //Admin for TroubleShooting
-  CS1 = new NetAddress(IP[1], port[1]);
-  CS2 = new NetAddress(IP[2], port[2]);
-
-  //===
-
-  kinect = new Kinect (this);
-  kinect.start();
-  kinect.tilt(deg);
-
-  //===
-
-  leap = new LeapMotion(this);
-
-  //===
-
-  for (int i = 0; i < depthLookUp.length; i++) 
+  if (kinectEnabled)
   {
-    depthLookUp[i] = rawDepthToMeters(i);
+    kinectSetup();
   }
+
   println("Net: " + netEnabled);
   println("Leap: " + leapEnabled);
   println("Kinect: " + kinectEnabled);
@@ -194,7 +157,6 @@ void setup() {
 
 void draw() {
   background(255);
-  fps = leap.getFrameRate();
 
   if (leapEnabled)
   {
@@ -203,6 +165,10 @@ void draw() {
 
   if (kinectEnabled)
   {
+    if (initState)
+    {
+      kinectInit();
+    }
     kinectAnalisis();
   }
 
@@ -218,10 +184,7 @@ void draw() {
 
   if (refTextEnabled)
   {
-    fill(100);
-    //    text(leapText(info), textPos.x, textPos.y);
-    text(kinectText(info), textPos.x + width/2, textPos.y);
-    text(myIP + ", " + myPort, 50, 50);
+    refTextRoutine();
   }
 }
 
@@ -234,20 +197,44 @@ void keyPressed()
   case '0' : 
     info = ++info % 2; 
     break;
-  case '1' : 
-    netEnabled = !netEnabled;
+  case '1' :
+  netEnabled = !netEnabled;
+    if (netEnabled)
+    { 
+      oscSetup();
+    }    
+    println("Net: " + netEnabled); 
     break;
   case '2' :
-    leapEnabled = !leapEnabled; 
+    leapEnabled = !leapEnabled;
+    if (leapEnabled)
+    {
+      leapSetup();
+    }
+    println("Leap: " + leapEnabled); 
     break;
   case '3' :
-    kinectEnabled = !kinectEnabled; 
+    kinectEnabled = !kinectEnabled;
+    if (kinectEnabled)
+    {
+      kinectSetup();
+    }
+    println("Kinect: " + kinectEnabled); 
     break;
   case '4' :
-    dummyDrawEnabled = !dummyDrawEnabled; 
+    dummyDrawEnabled = !dummyDrawEnabled;
+    println("Dummy Draw: " + dummyDrawEnabled); 
     break;
   case '5' :
-    refTextEnabled = !refTextEnabled; 
+    refTextEnabled = !refTextEnabled;
+    println("Ref Text: " + refTextEnabled); 
+    break;
+  case RETURN :
+    if (keyEvent.isMetaDown())
+    {
+      initState = true;
+      println("Calibrating... Set Appart and wait please");
+    }
     break;
   case CODED  :
     switch (keyCode)
@@ -259,7 +246,10 @@ void keyPressed()
       deg--;
       break;
     }
-    kinect.tilt(deg);
+    if (kinectEnabled)
+    {
+      kinect.tilt(deg);
+    }
     break;
   }
 }
@@ -270,7 +260,10 @@ void keyPressed()
 //=========================================================================//
 
 void stop() {
-  kinect.quit();
+  if (kinectEnabled)
+  {
+    kinect.quit();
+  }
   super.stop();
 }
 

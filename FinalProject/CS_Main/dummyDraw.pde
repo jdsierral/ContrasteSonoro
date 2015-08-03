@@ -1,6 +1,25 @@
 void dummyDraw()
 {
+  if (kinectEnabled)
+  {
+    drawKinect();
+  }
+  
+  if (leapEnabled)
+  {
+    drawLeap();
+  }
+}
 
+void drawKinect()
+{
+  showDepth();
+  ellipse(kinectPos1.x, kinectPos1.y, kinectPos1.z, kinectPos1.z);
+  ellipse(kinectPos2.x, kinectPos2.y, kinectPos2.z, kinectPos2.z);
+}
+
+void drawLeap()
+{
   //Left and Right proper hand positions
 
   drawHand(leapPosL1.x, leapPosL1.y, leapPosL1.z, 
@@ -16,10 +35,6 @@ void dummyDraw()
 
   drawHand(leapPosR2.x, leapPosR2.y, leapPosR2.z, 
   leapDynR2.x, leapDynR2.y, leapDynR2.z, leapGrabR2, color(0, 255, 255));
-
-  ellipse(kinectPos1.x, kinectPos1.y, kinectPos1.z, kinectPos1.z);
-
-  ellipse(kinectPos2.x, kinectPos2.y, kinectPos2.z, kinectPos2.z);
 }
 
 void drawHand(float x, float y, float z, 
@@ -38,4 +53,12 @@ float grab, color c)
   popMatrix();
 }
 
+void showDepth()
+{  
+  PImage img = kinect.getDepthImage();
+  pushMatrix();
+  scale(-1, 1);
+  image(kinect.getDepthImage(), -kinectWidth, 0);
+  popMatrix();
+}
 

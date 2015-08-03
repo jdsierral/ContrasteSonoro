@@ -56,8 +56,63 @@ PVector meanPos (int[] topIndex, int w)
 }
 
 //=====================================================================================
+
+float rawDepthToMeters(int depthValue) {
+  if (depthValue < 2048) {
+    return (float)(1.0 / ((double)(depthValue) * -0.0030711016 + 3.3309495161));
+  }
+  return 0.0f;
+}
+
+//=====================================================================================
+void lowRes (float [] array, int width_, int height_, int meanSize)
+{
+  for (int i = 0; i < array.length; i++)
+  {
+    if ( (i % width_) % meanSize == 0 && (i / width_) % meanSize == 0)
+    {
+      for (int m = 0; m < meanSize; m++)
+      {
+        for (int n = 0; n < meanSize; n++)
+        {
+          array[i] += array[m + i + n * width_];
+        }
+      }
+      array[i] = array[i] / (meanSize * meanSize);
+    } else if (i/ width_ % meanSize == 0) {
+      array[i] = array[(i/meanSize * meanSize)];
+    } else { 
+      array[i] = array[i-width_];
+    }
+  }
+}
+
+void lowRes (int [] array, int width_, int height_, int meanSize)
+{
+  for (int i = 0; i < array.length; i++)
+  {
+    if ( (i % width_) % meanSize == 0 && (i / width_) % meanSize == 0)
+    {
+      for (int m = 0; m < meanSize; m++)
+      {
+        for (int n = 0; n < meanSize; n++)
+        {
+          array[i] += array[m + i + n * width_];
+        }
+      }
+      array[i] = array[i] / (meanSize * meanSize);
+    } else if (i/ width_ % meanSize == 0) {
+      array[i] = array[(i/meanSize * meanSize)];
+    } else { 
+      array[i] = array[i-width_];
+    }
+  }
+}
 //=====================================================================================
 //=====================================================================================
+/*
+
+
 
 int maxValueIndexSpaced (int[] array, int size, int space)
 {
@@ -147,16 +202,6 @@ int minValueIndex (int[] array, int size)
 
 //=====================================================================================
 //=====================================================================================
-
-
-float rawDepthToMeters(int depthValue) {
-  if (depthValue < 2048) {
-    return (float)(1.0 / ((double)(depthValue) * -0.0030711016 + 3.3309495161));
-  }
-  return 0.0f;
-}
-
-
 //=====================================================================================
 //=====================================================================================
 
@@ -205,49 +250,9 @@ int smooth(int max, int max_, int speed, int minThreshold)
 
 //Spatial Averaging
 
-void lowRes (int [] array, int width_, int height_, int meanSize)
-{
-  for (int i = 0; i < array.length; i++)
-  {
-    if ( (i % width_) % meanSize == 0 && (i / width_) % meanSize == 0)
-    {
-      for (int m = 0; m < meanSize; m++)
-      {
-        for (int n = 0; n < meanSize; n++)
-        {
-          array[i] += array[m + i + n * width_];
-        }
-      }
-      array[i] = array[i] / (meanSize * meanSize);
-    } else if (i/ width_ % meanSize == 0) {
-      array[i] = array[(i/meanSize * meanSize)];
-    } else { 
-      array[i] = array[i-width_];
-    }
-  }
-}
 
-void lowRes (float [] array, int width_, int height_, int meanSize)
-{
-  for (int i = 0; i < array.length; i++)
-  {
-    if ( (i % width_) % meanSize == 0 && (i / width_) % meanSize == 0)
-    {
-      for (int m = 0; m < meanSize; m++)
-      {
-        for (int n = 0; n < meanSize; n++)
-        {
-          array[i] += array[m + i + n * width_];
-        }
-      }
-      array[i] = array[i] / (meanSize * meanSize);
-    } else if (i/ width_ % meanSize == 0) {
-      array[i] = array[(i/meanSize * meanSize)];
-    } else { 
-      array[i] = array[i-width_];
-    }
-  }
-}
+
+
 
 
 void meanSpaceVal(int[] input, int[] output, int width_, int height_, int meanSize)
@@ -276,4 +281,4 @@ void meanSpaceVal(int[] input, int[] output, int width_, int height_, int meanSi
     }
   }
 }
-
+*/

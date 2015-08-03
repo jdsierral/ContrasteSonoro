@@ -138,12 +138,6 @@ void draw()
 
   for (int i = 0; i< kinectSize; i++)
   {
-//    while (depth[i] == 0);
-//    {
-//      int k = 0;
-//      depth[i] = depth[i - k];
-//      k++;
-//    }
     if (abs(depth[i] - meanDepth[i]) < 10 * stndDepth[i])
     {  
       depth [i] = 0;
@@ -160,19 +154,19 @@ void draw()
     if (picture == 0)
     {    
       pixels[(width-1-(i % width)) + (i / width)*width] = 
-        color(map(depth[i], 0, 2048, 0, 255), 
+      color(map(depth[i], 0, 2048, 0, 255), 
       map(depth[i], 0, 2048, 0, 255), 
       map(depth[i], 0, 2048, 0, 255));
     } else if (picture == 1)
     {
       pixels[(width-1-(i % width)) + (i / width)*width] = 
-        color(map(meanDepth[i], 0, 2048, 0, 255), 
+      color(map(meanDepth[i], 0, 2048, 0, 255), 
       map(meanDepth[i], 0, 2048, 0, 255), 
       map(meanDepth[i], 0, 2048, 0, 255));
     } else if (picture == 2)
     {
       pixels[(width-1-(i % width)) + (i / width)*width] = 
-        color(map(stndDepth[i], 0, 2048, 0, 255), 
+      color(map(stndDepth[i], 0, 2048, 0, 255), 
       map(stndDepth[i], 0, 2048, 0, 255), 
       map(stndDepth[i], 0, 2048, 0, 255));
     }
