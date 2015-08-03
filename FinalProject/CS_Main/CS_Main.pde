@@ -45,11 +45,14 @@ Kinect kinect;
 //=========================================================================//
 //Global Variables
 
-boolean netEnabled = false;
-boolean leapEnabled = false;
-boolean kinectEnabled = false;
-boolean dummyDrawEnabled = false;
-boolean refTextEnabled = false;
+int[] setup = { 
+  1, 1, 1, 1, 0
+};
+boolean netEnabled;
+boolean leapEnabled;
+boolean kinectEnabled;
+boolean dummyDrawEnabled;
+boolean refTextEnabled;
 //UDP STUFF
 
 
@@ -80,7 +83,9 @@ int maxThreshold = 200;
 int speed = 5;
 PVector max = new PVector ();
 boolean meanFlag = false;
-boolean stndFlag = false; 
+boolean stndFlag = false;
+
+int meanSize = 10; 
 
 PVector kinectPos1 = new PVector ();
 
@@ -117,6 +122,32 @@ int info = 0;
 //=========================================================================//
 
 void setup() {
+  if (setup[0]==1) {
+    netEnabled = true;
+  } else {
+    netEnabled = false;
+  }
+  if (setup[1]==1) {
+    leapEnabled = true;
+  } else {
+    leapEnabled = false;
+  }
+  if (setup[2]==1) {
+    kinectEnabled = true;
+  } else {
+    kinectEnabled = false;
+  }
+  if (setup[3]==1) {
+    dummyDrawEnabled = true;
+  } else {
+    dummyDrawEnabled = false;
+  }
+  if (setup[4]==1) {
+    refTextEnabled = true;
+  } else {
+    refTextEnabled = false;
+  }
+  
   size (640, 480, P3D);
   textPos = new PVector (20, height - 200);
   background(255);
@@ -151,6 +182,11 @@ void setup() {
   {
     depthLookUp[i] = rawDepthToMeters(i);
   }
+  println("Net: " + netEnabled);
+  println("Leap: " + leapEnabled);
+  println("Kinect: " + kinectEnabled);
+  println("Dummy Draw: " + dummyDrawEnabled);
+  println("Ref Text: " + refTextEnabled);
 }
 
 
@@ -214,12 +250,14 @@ void keyPressed()
     refTextEnabled = !refTextEnabled; 
     break;
   case CODED  :
-    if (keyCode == UP)
+    switch (keyCode)
     {
+    case UP :
       deg++;
-    } else if (keyCode == DOWN)
-    {
+      break;
+    case DOWN :
       deg--;
+      break;
     }
     kinect.tilt(deg);
     break;
@@ -237,3 +275,4 @@ void stop() {
 }
 
 //=========================================================================//
+

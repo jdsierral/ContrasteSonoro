@@ -6,7 +6,6 @@ float[] top10Array = new float [aSize];
 int[] top10 = new int [10];
 int amount = top10.length;
 
-
 void setup()
 {
   size (1000, 400);
@@ -59,7 +58,7 @@ void draw()
     top10[0] +  ", " +
     dupArray[top10[0]] +  ", " +
     ordArray[0], 20, height - 5);
-  for(int i = 0; i < amount; i++)
+  for (int i = 0; i < amount; i++)
   {
     text((int)ordArray[i] + ", ", 20 + 20 * i, height - 20);
     text((int)top10Array[i] + ", ", 20 + 20 * i, height - 35);
