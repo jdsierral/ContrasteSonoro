@@ -80,6 +80,8 @@ int kinectWidth = 640;
 int kinectHeight = 480;
 
 int[] depth = new int[kinectSize];
+int[] meanDepth = new int[kinectSize];
+float[] stndDepth = new float[kinectSize];
 //int maxIndex;
 
 int minThreshold = 5;
@@ -126,32 +128,14 @@ int info = 0;
 //=========================================================================//
 
 void setup() {
-<<<<<<< Updated upstream
-<<<<<<< HEAD
-=======
-  
->>>>>>> origin/master
-  initRoutine();
-  
-  if (dummyDrawEnabled)
-  {
-    size (1024, 640, P3D);
-  } else {
-    size (1024, 640);
-  }
-=======
   size (1024, 640, P3D);
->>>>>>> Stashed changes
   background(255);
+
+  initRoutine();
 
   if (netEnabled)
   {
     oscSetup();
-  }
-  
-  if (leapEnabled)
-  {
-    leapSetup();
   }
 
   if (leapEnabled)

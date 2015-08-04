@@ -14,14 +14,14 @@ void kinectSetup()
 
 void kinectInit()
 {
-  int[] meanDepth = new int[kinectSize];
-  float[] stndDepth = new float[kinectSize];
+  meanDepth = kinect.getRawDepth();
   for (int j = 0; j < 100; j++)
   {
     depth = kinect.getRawDepth();
     for (int i = 0; i < kinectSize; i++)
     {
       meanDepth[i] = (meanDepth[i] * (meanLength - 1) + depth[i])/meanLength;
+      stndDepth[i] = 0;
     }
     println(str(j));
   }
