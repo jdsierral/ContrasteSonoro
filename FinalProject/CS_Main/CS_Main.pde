@@ -125,6 +125,10 @@ int info = 0;
 //=========================================================================//
 
 void setup() {
+<<<<<<< HEAD
+=======
+  
+>>>>>>> origin/master
   initRoutine();
   
   if (dummyDrawEnabled)
