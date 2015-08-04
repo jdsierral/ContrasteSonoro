@@ -45,7 +45,7 @@ Kinect kinect;
 //=========================================================================//
 
 int[] setup = {
-  0, 0, 0, 0, 0
+  1, 1, 0, 1, 1
 };
 
 boolean netEnabled;
@@ -125,6 +125,8 @@ int info = 0;
 //=========================================================================//
 
 void setup() {
+  initRoutine();
+  
   if (dummyDrawEnabled)
   {
     size (1024, 640, P3D);
@@ -133,11 +135,14 @@ void setup() {
   }
   background(255);
 
-  initRoutine();
-
   if (netEnabled)
   {
     oscSetup();
+  }
+  
+  if (leapEnabled)
+  {
+    leapSetup();
   }
 
   if (kinectEnabled)
