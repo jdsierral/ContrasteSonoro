@@ -2,13 +2,15 @@
 
 void oscSetup()
 {
-   for (int i = 0; i <= 2; i++)
+  for (int i = 0; i <= 2; i++)
   {
     if (myIP.equals(IP[i]))
     {
       myPort = port[i];
     }
   }
+
+  println(myIP + ", " + myPort);
 
   osc = new OscP5(this, myPort);    //this mac port;
 
@@ -48,9 +50,8 @@ void oscRoutine()
   }
   if (!myIP.equals(IP[2]))
   {
-    osc.send(bundleMsg, CS2);
+//    osc.send(bundleMsg, CS2);
   }
-
 }
 
 //    RECEIVE

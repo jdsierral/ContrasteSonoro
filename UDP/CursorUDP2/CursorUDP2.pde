@@ -22,8 +22,8 @@ void setup()
   size(640, 480);
   
   osc = new OscP5(this, 12345);
-  mac1 = netAddress ("192.168.0.11", 12345);
-  mac2 = netAddress ("192.168.0.12", 12346);
+  mac1 = netAddress ("192.168.0.100", 12345);
+  mac2 = netAddress ("192.168.0.101", 12346);
   
   pos[x + red] = width/4;
   pos[y + red] = height/4;
@@ -42,7 +42,7 @@ void draw()
   pos[y + thisColor] = mouseY;
   
   fill (0, 0, 255);
-  ellipse(pos[x + red], pos[y + red], 
+  
   
   
 }  

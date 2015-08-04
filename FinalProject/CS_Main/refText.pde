@@ -11,7 +11,11 @@ void refTextRoutine()
   }
   if (netEnabled)
   {
-    text(myIP + ", " + myPort, 50, 50);
+    text(myIP + ", " + myPort, textPos.x, 50);
+    for (int i = 0; i < 2; i++)
+    {
+      text(IP[i] + ", " + port[i], textPos.x, 65 + 15 * i);
+    }
   }
 }
 

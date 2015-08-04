@@ -59,11 +59,12 @@ int[] port = {
   12000, 12001, 12002
 };
 String[] IP = {
-  "192.168.0.100", "192.168.0.101", "192.168.0.102"
+  "192.168.0.100", "192.168.0.184", "192.168.0.102"
 };
 
 String myIP = NetInfo.lan();
 int myPort;
+
 
 //=========================================================================//
 //////////////////////////////////KINECT STUFF///////////////////////////////
@@ -125,6 +126,7 @@ int info = 0;
 //=========================================================================//
 
 void setup() {
+<<<<<<< Updated upstream
 <<<<<<< HEAD
 =======
   
@@ -137,6 +139,9 @@ void setup() {
   } else {
     size (1024, 640);
   }
+=======
+  size (1024, 640, P3D);
+>>>>>>> Stashed changes
   background(255);
 
   if (netEnabled)
@@ -144,6 +149,11 @@ void setup() {
     oscSetup();
   }
   
+  if (leapEnabled)
+  {
+    leapSetup();
+  }
+
   if (leapEnabled)
   {
     leapSetup();
@@ -207,7 +217,7 @@ void keyPressed()
     info = ++info % 2; 
     break;
   case '1' :
-  netEnabled = !netEnabled;
+    netEnabled = !netEnabled;
     if (netEnabled)
     { 
       oscSetup();

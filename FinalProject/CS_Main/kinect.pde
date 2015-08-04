@@ -3,7 +3,7 @@ void kinectSetup()
 {
   kinect = new Kinect (this);
   kinect.start();
-  kinect.tilt(deg);
+
   kinect.enableDepth(true);
 
   for (int i = 0; i < depthLookUp.length; i++) 
