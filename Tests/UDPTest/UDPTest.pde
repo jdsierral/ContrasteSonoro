@@ -49,10 +49,6 @@ void draw()
 }
 
 void oscEvent(OscMessage msg) {
-  print("### received an osc message.");
-  print(" addrpattern: "+msg.addrPattern());
-  println(" typetag: "+msg.typetag());
-
   if (msg.checkAddrPattern("/position") == true) {
     if (msg.checkTypetag("fff")) {
       pos2.x = msg.get(0).floatValue();
