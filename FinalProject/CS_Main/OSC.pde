@@ -19,6 +19,8 @@ void oscSetup()
   CS2 = new NetAddress(IP[2], port[2]);
 }
 
+//SEND
+
 void oscRoutine()
 {
   OscBundle bundleMsg = new OscBundle();
@@ -50,7 +52,7 @@ void oscRoutine()
   }
   if (!myIP.equals(IP[2]))
   {
-//    osc.send(bundleMsg, CS2);
+    osc.send(bundleMsg, CS2);
   }
 }
 
