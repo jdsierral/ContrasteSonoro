@@ -1,11 +1,9 @@
-
 void kinectSetup()
 {
   kinect = new Kinect (this);
   kinect.start();
 
   kinect.enableDepth(true);
-
   for (int i = 0; i < depthLookUp.length; i++) 
   {
     depthLookUp[i] = rawDepthToMeters(i);
@@ -14,29 +12,7 @@ void kinectSetup()
 
 void kinectInit()
 {
-  meanDepth = kinect.getRawDepth();
-  for (int j = 0; j < 100; j++)
-  {
-    depth = kinect.getRawDepth();
-    for (int i = 0; i < kinectSize; i++)
-    {
-      meanDepth[i] = (meanDepth[i] * (meanLength - 1) + depth[i])/meanLength;
-      stndDepth[i] = 0;
-    }
-    println(str(j));
-  }
-  
-  for (int j = 0; j < 100; j++)
-  {
-    depth = kinect.getRawDepth();
-    for (int i = 0; i < kinectSize; i++)
-    {
-      stndDepth[i] = sqrt((stndDepth[i] * (meanLength - 1) + pow(depth[i] - meanDepth[i], 2))/meanLength);
-    }
-    println(str(j));
-    lowRes(stndDepth, width, height, meanSize);
-  }
-  initState = true;
+
 }
 
 void kinectAnalisis()
@@ -44,7 +20,7 @@ void kinectAnalisis()
   int[] flipedDepth = kinect.getRawDepth();
   for (int i = 0; i < kinectSize; i++)
   {
-    depth[(kinectWidth-1-(i % kinectWidth)) + (i / kinectWidth)*kinectWidth] = depth[i];
+    depth[(kinectWidth-1-(i % kinectWidth)) + (i / kinectWidth)*kinectWidth] = flipedDepth[i];
   }
 
   int[] topArray = new int[meanSize];
@@ -59,7 +35,7 @@ void kinectAnalisis()
   maxLerpedPos.y = PApplet.lerp(maxLerpedPos.y, maxPos.y, 0.3f);
 
   fill(255, 255, 0);
-  ellipse(maxLerpedPos.x, maxLerpedPos.y, 20, 20);
+  ellipse(maxPos.x, maxPos.y, 20, 20);
 }
 
 /* new ideas
