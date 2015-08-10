@@ -67,7 +67,7 @@ void draw()
         stndDepth[i] = sqrt((stndDepth[i] * (meanLength - 1) + pow(depth[i] - meanDepth[i], 2))/meanLength);
       }
       println(str(j));
-      lowRes(stndDepth, width, height, meanSize);
+//      lowRes(stndDepth, width, height, meanSize);
     }
     initState = true;
   }
@@ -85,10 +85,10 @@ void draw()
 
   top(depth, topArray, topIndex); 
   maxPos = meanPos(topIndex, width);
-
-  maxPos.lerp(maxPos, 0.5);
-
-
+  //functions to void jittery signal
+  maxLerpedPos.x = smooth(maxLerpedPos.x, maxPos.x, speed, minThreshold, maxThreshold);
+  maxLerpedPos.y = smooth(maxLerpedPos.y, maxPox.y, speed, minThreshold, maxThreshold);
+  
   showDepth();
 
   fill(255, 255, 0);
@@ -208,5 +208,26 @@ void showDepth()
   scale(-1, 1);
   image(kinect.getDepthImage(), -kinectWidth, 0);
   popMatrix();
+}
+
+int smooth(int max, int max_, int speed, int minThreshold, int maxThreshold)
+{
+  if (abs(max_ - max) > minThreshold && abs(max_ - max) < maxThreshold)
+  {
+    max = max + ((max_ - max)/speed);
+  } else if (abs(max_ - max) >= maxThreshold)
+  {
+    max = max_;
+  }
+  return max;
+}
+
+int smooth(int max, int max_, int speed, int minThreshold)
+{
+  if (abs(max_ - max) > minThreshold)
+  {
+    max = max + ((max_ - max)/speed);
+  }
+  return max;
 }
 
