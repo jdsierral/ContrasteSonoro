@@ -6,7 +6,7 @@ Kinect kinect;
 
 int meanSize = 100;
 int meanLength = 50;
-int meanFactor = 3;
+int meanFactor = 1;
 float[] depthLookUp = new float[2048];
 
 int deg = 10;
@@ -21,7 +21,7 @@ float[] stndDepth = new float[kinectSize];
 
 int minThreshold = 5;
 int maxThreshold = 200;
-int speed = 5;
+int speed = 2;
 
 PVector max = new PVector();
 
@@ -35,6 +35,7 @@ void setup()
   kinect.start();
 
   kinect.enableDepth(true);
+  kinect.tilt(0);
   for (int i = 0; i < depthLookUp.length; i++)
   {
     depthLookUp[i] = rawDepthToMeters(i);
@@ -70,8 +71,20 @@ void draw()
     }
     initState = true;
   }
-
-  int[] flipedDepth = kinect.getRawDepth();
+  
+  for (int i = 0; i< kinectSize; i++)
+  {
+    if (abs(depth[i] - meanDepth[i]) < 2 * stndDepth[i])
+    {  
+      depth [i] = 2048;
+    } 
+//    else if (depth[i] > 2000)
+//    {
+//      depth [i] = 2048; 
+//    }
+  }
+  
+  int[] flipedDepth = depth;
   for (int i = 0; i < kinectSize; i++)
   {
     depth[(kinectWidth-1-(i % kinectWidth)) + (i / kinectWidth) * kinectWidth] = flipedDepth[i];
@@ -107,8 +120,8 @@ void keyPressed()
 {
   switch (key)
   {
-    case ' '  :
-    kinectFrame = ++kinectFrame % 3;
+  case ' '  :
+    kinectFrame = ++kinectFrame % 4;
     println(kinectFrame);
     break;
   }
@@ -116,7 +129,6 @@ void keyPressed()
 
 void showDepth(int kinectFrame)
 {
-
   switch (kinectFrame)
   {
   case 0  :
@@ -126,24 +138,43 @@ void showDepth(int kinectFrame)
     popMatrix();
     break;
   case 1  :
-    PImage img = createImage (kinectWidth, kinectHeight, ALPHA);
-    img.loadPixels();
+    PImage img1 = createImage (kinectWidth, kinectHeight, RGB);
+    img1.loadPixels();
     for (int i = 0; i < kinectSize; i++)
     {
-      img.pixels[i] = alpha(meanDepth[i]);
+      img1.pixels[i] = color((int)map(depth[i], 0, 2048, 255, 0));
     }
-    img.updatePixels();
-    image(img, 0, 0);
+    img1.updatePixels();
+    pushMatrix();
+    scale(-1, 1);
+    image(img1, -kinectWidth, 0);
+    popMatrix();
     break;
   case 2  :
-    PImage img = createImage (kinectWidth, kinectHeight, ALPHA);
-    img.loadPixels();
+    PImage img2 = createImage (kinectWidth, kinectHeight, RGB);
+    img2.loadPixels();
     for (int i = 0; i < kinectSize; i++)
     {
-      img.pixels[i] = alpha(stndDepth[i]);
+      img2.pixels[i] = color((int)map(meanDepth[i], 0, 2048, 255, 0));
     }
-    img.updatePixels();
-    image(img, 0, 0);
+    img2.updatePixels();
+    pushMatrix();
+    scale(-1, 1);
+    image(img2, -kinectWidth, 0);
+    popMatrix();
+    break;
+  case 3  :
+    PImage img3 = createImage (kinectWidth, kinectHeight, RGB);
+    img3.loadPixels();
+    for (int i = 0; i < kinectSize; i++)
+    {
+      img3.pixels[i] = color((int)(map(stndDepth[i], 0, 2048, 0, 255)));
+    }
+    img3.updatePixels();
+    pushMatrix();
+    scale(-1, 1);
+    image(img3, -kinectWidth, 0);
+    popMatrix();
     break;
   default  :
     break;
