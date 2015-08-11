@@ -48,7 +48,7 @@ void oscRoutine()
   }
   if (!myIP.equals(IP[1]))
   {
-    osc.send(bundleMsg, CS1);
+//    osc.send(bundleMsg, CS1);
   }
   if (!myIP.equals(IP[2]))
   {
