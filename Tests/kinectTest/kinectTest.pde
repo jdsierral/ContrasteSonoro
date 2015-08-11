@@ -26,6 +26,7 @@ int speed = 5;
 PVector max = new PVector();
 
 boolean initState = false;
+int kinectFrame = 0;
 
 void setup()
 {
@@ -95,19 +96,58 @@ void draw()
     max.y += ((maxPos.y - max.y)/speed);
   }
 
-  showDepth();
-  
+  showDepth(kinectFrame);
+
   fill(255, 0, 0);
   noStroke();
   ellipse(max.x, max.y, 20, 20);
 }
 
-void showDepth()
+void keyPressed()
 {
-  pushMatrix();
-  scale(-1, 1);
-  image(kinect.getDepthImage(), -kinectWidth, 0);
-  popMatrix();
+  switch (key)
+  {
+    case ' '  :
+    kinectFrame = ++kinectFrame % 3;
+    println(kinectFrame);
+    break;
+  }
+}
+
+void showDepth(int kinectFrame)
+{
+
+  switch (kinectFrame)
+  {
+  case 0  :
+    pushMatrix();
+    scale(-1, 1);
+    image(kinect.getDepthImage(), -kinectWidth, 0);
+    popMatrix();
+    break;
+  case 1  :
+    PImage img = createImage (kinectWidth, kinectHeight, ALPHA);
+    img.loadPixels();
+    for (int i = 0; i < kinectSize; i++)
+    {
+      img.pixels[i] = alpha(meanDepth[i]);
+    }
+    img.updatePixels();
+    image(img, 0, 0);
+    break;
+  case 2  :
+    PImage img = createImage (kinectWidth, kinectHeight, ALPHA);
+    img.loadPixels();
+    for (int i = 0; i < kinectSize; i++)
+    {
+      img.pixels[i] = alpha(stndDepth[i]);
+    }
+    img.updatePixels();
+    image(img, 0, 0);
+    break;
+  default  :
+    break;
+  }
 }
 
 float rawDepthToMeters(int depthValue) {
@@ -121,7 +161,7 @@ void top (int[] inData, int[] topArray, int[] topIndex) {
   int[] array = inData;
   for (int j = 0; j < topArray.length; j++)
   {
-    int min , max;
+    int min, max;
     min = 1000;
     max = 0;
     for (int i = 0; i < array.length; i++)
@@ -153,6 +193,7 @@ PVector meanPos (int[] topIndex, int w)
   }
   meanPos.x = sumX / topIndex.length;
   meanPos.y = sumY / topIndex.length;
-  
+
   return meanPos;
 }
+
