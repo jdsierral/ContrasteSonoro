@@ -44,7 +44,9 @@ Kinect kinect;
 ////////////////////////////////GLOBAL VARIABLES/////////////////////////////
 //=========================================================================//
 
-int[] setup = {0, 1, 1, 1, 1};
+int[] setup = {
+  0, 1, 1, 1, 1
+};
 
 boolean netEnabled;
 boolean leapEnabled;
@@ -68,25 +70,28 @@ int myPort;
 //////////////////////////////////KINECT STUFF///////////////////////////////
 //=========================================================================//
 
-int meanSize = 10; 
+int meanSize = 100;
 int meanLength = 50;
-float[] depthLookUp = new float[2048];
+int meanFactor = 5; // change later to 3 at least
 
-int deg = 15;
-int kinectSize = 307200;  //640 x 480
+int deg = 0;
+float accuracy = 15;
+
+int kinectSize = 307200;
 int kinectWidth = 640;
 int kinectHeight = 480;
 
 int[] depth = new int[kinectSize];
 int[] meanDepth = new int[kinectSize];
 float[] stndDepth = new float[kinectSize];
-//int maxIndex;
 
-int minThreshold = 5;
-int maxThreshold = 200;
-int speed = 5;
-PVector max = new PVector ();
-boolean initState = false;
+int threshold = 5;
+int stiffness = 2;
+
+boolean initState = true;
+int kinectFrame = 0;
+
+PVector pos = new PVector();
 
 PVector kinectPos1 = new PVector ();
 PVector kinectPos2 = new PVector ();
@@ -166,7 +171,7 @@ void draw() {
 
   if (kinectEnabled)
   {
-    if (initState)
+    if (!initState)
     {
       kinectInit();
     }
@@ -191,74 +196,6 @@ void draw() {
 
 //=========================================================================//
 
-void keyPressed()
-{
-  switch (key)
-  {
-  case '0' : 
-    info = ++info % 2; 
-    break;
-  case '1' :
-    netEnabled = !netEnabled;
-    if (netEnabled)
-    { 
-      oscSetup();
-    }    
-    println("Net: " + netEnabled); 
-    break;
-  case '2' :
-    leapEnabled = !leapEnabled;
-    if (leapEnabled)
-    {
-      leapSetup();
-    }
-    println("Leap: " + leapEnabled); 
-    break;
-  case '3' :
-    kinectEnabled = !kinectEnabled;
-    if (kinectEnabled)
-    {
-      kinectSetup();
-    }
-    println("Kinect: " + kinectEnabled); 
-    break;
-  case '4' :
-    dummyDrawEnabled = !dummyDrawEnabled;
-    println("Dummy Draw: " + dummyDrawEnabled); 
-    break;
-  case '5' :
-    refTextEnabled = !refTextEnabled;
-    println("Ref Text: " + refTextEnabled); 
-    break;
-  case RETURN :
-    if (keyEvent.isMetaDown())
-    {
-      initState = true;
-      println("Calibrating... Set Appart and wait please");
-    }
-    break;
-  case CODED  :
-    switch (keyCode)
-    {
-    case UP :
-      deg++;
-      break;
-    case DOWN :
-      deg--;
-      break;
-    }
-    if (kinectEnabled)
-    {
-      kinect.tilt(deg);
-    }
-    break;
-  }
-}
-//=========================================================================//
-
-
-
-//=========================================================================//
 
 void stop() {
   if (kinectEnabled)

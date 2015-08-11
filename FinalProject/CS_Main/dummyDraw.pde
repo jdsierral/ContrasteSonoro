@@ -13,7 +13,7 @@ void dummyDraw()
 
 void drawKinect()
 {
-  showDepth();
+  showDepth(kinectFrame);
   ellipse(kinectPos1.x, kinectPos1.y, kinectPos1.z, kinectPos1.z);
   ellipse(kinectPos2.x, kinectPos2.y, kinectPos2.z, kinectPos2.z);
 }
@@ -53,12 +53,47 @@ float grab, color c)
   popMatrix();
 }
 
-void showDepth()
-{  
-  PImage img = kinect.getDepthImage();
+void showDepth(int kinectFrame)
+{ 
   pushMatrix();
   scale(-1, 1);
-  image(kinect.getDepthImage(), -kinectWidth, 0);
+  translate(-kinectWidth, 0); 
+  switch (kinectFrame)
+  {
+  case 0  :
+    image (kinect.getDepthImage(), 0, 0);
+    break;
+  case 1  :
+    PImage img1 = createImage(kinectWidth, kinectHeight, RGB);
+    img1.loadPixels();
+    for (int i = 0; i < kinectSize; i++)
+    {
+      img1.pixels[i] = color((int)map(depth[i], 0, 2048, 255, 0));
+    }
+    img1.updatePixels();
+    image(img1, 0, 0);
+    break;
+  case 2  :
+    PImage img2 = createImage(kinectWidth, kinectHeight, RGB);
+    img2.loadPixels();
+    for (int i = 0; i < kinectSize; i++)
+    {
+      img2.pixels[i] = color((int)map(meanDepth[i], 0, 2048, 255, 0));
+    }
+    img2.updatePixels();
+    image(img2, 0, 0);
+    break;
+  case 3  :
+    PImage img3 = createImage(kinectWidth, kinectHeight, RGB);
+    img3.loadPixels();
+    for (int i = 0; i < kinectSize; i++)
+    {
+      img3.pixels[i] = color((int)map(stndDepth[i], 0, 2048, 0, 255));
+    }
+    img3.updatePixels();
+    image(img3, 0, 0);
+    break;
+  }
   popMatrix();
 }
 

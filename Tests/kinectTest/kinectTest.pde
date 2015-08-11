@@ -6,10 +6,10 @@ Kinect kinect;
 
 int meanSize = 100;
 int meanLength = 50;
-int meanFactor = 1;
-float[] depthLookUp = new float[2048];
+int meanFactor = 5; // change later to 3 at least
 
-int deg = 10;
+int deg = 0;
+float accuracy = 15;
 
 int kinectSize = 307200;
 int kinectWidth = 640;
@@ -19,9 +19,8 @@ int[] depth = new int[kinectSize];
 int[] meanDepth = new int[kinectSize];
 float[] stndDepth = new float[kinectSize];
 
-int minThreshold = 5;
-int maxThreshold = 200;
-int speed = 2;
+int threshold = 5;
+int stiffness = 2;
 
 PVector max = new PVector();
 
@@ -30,23 +29,19 @@ int kinectFrame = 0;
 
 void setup()
 {
-  size(640, 480, P3D);
+  size (640, 480);
   kinect = new Kinect(this);
   kinect.start();
 
   kinect.enableDepth(true);
-  kinect.tilt(0);
-  for (int i = 0; i < depthLookUp.length; i++)
-  {
-    depthLookUp[i] = rawDepthToMeters(i);
-  }
+  kinect.tilt(deg);
 }
 
 void draw()
 {
   background(255);
 
-  if (initState == false)
+  if (!initState)
   {
     meanDepth = kinect.getRawDepth();
     for (int j = 0; j < meanFactor * meanLength; j++)
@@ -59,7 +54,7 @@ void draw()
       }
       println(str(j));
     }
-
+    println("done calculating mean space");
     for (int j = 0; j < meanFactor * meanLength; j++)
     {
       depth = kinect.getRawDepth();
@@ -69,44 +64,36 @@ void draw()
       }
       println(str(j));
     }
+    println("done calculating standard deviation");
     initState = true;
+    println("done Calibrating backgroudn extraction");
   }
+  depth = kinect.getRawDepth();
   
-  for (int i = 0; i< kinectSize; i++)
-  {
-    if (abs(depth[i] - meanDepth[i]) < 2 * stndDepth[i])
-    {  
-      depth [i] = 2048;
-    } 
-//    else if (depth[i] > 2000)
-//    {
-//      depth [i] = 2048; 
-//    }
-  }
-  
-  int[] flipedDepth = depth;
   for (int i = 0; i < kinectSize; i++)
   {
-    depth[(kinectWidth-1-(i % kinectWidth)) + (i / kinectWidth) * kinectWidth] = flipedDepth[i];
+    if (abs(depth[i] - meanDepth[i]) <= accuracy * stndDepth[i])
+    {
+      depth[i] = 2048;
+    }
   }
 
   int[] topArray = new int[meanSize];
   int[] topIndex = new int[meanSize];
 
-  PVector maxPos = new PVector ();
+  PVector maxPos = new PVector();
+
   top(depth, topArray, topIndex);
   maxPos = meanPos(topIndex, kinectWidth);
 
-  double speed = 5;
-
-  if (abs(maxPos.x - max.x) > minThreshold)
+  if (abs(maxPos.x - max.x) > threshold)
   {
-    max.x += ((maxPos.x - max.x)/speed);
+    max.x += ((maxPos.x - max.x)/stiffness);
   }
 
-  if (abs(maxPos.y - max.y) > minThreshold)
+  if (abs(maxPos.y - max.y) > threshold)
   {
-    max.y += ((maxPos.y - max.y)/speed);
+    max.y += ((maxPos.y - max.y)/stiffness);
   }
 
   showDepth(kinectFrame);
@@ -115,6 +102,50 @@ void draw()
   noStroke();
   ellipse(max.x, max.y, 20, 20);
 }
+
+
+
+void showDepth(int kinectFrame)
+{
+  switch (kinectFrame)
+  {
+  case 0  :
+    image (kinect.getDepthImage(), 0, 0);
+    break;
+  case 1  :
+    PImage img1 = createImage(kinectWidth, kinectHeight, RGB);
+    img1.loadPixels();
+    for (int i = 0; i < kinectSize; i++)
+    {
+      img1.pixels[i] = color((int)map(depth[i], 0, 2048, 255, 0));
+    }
+    img1.updatePixels();
+    image(img1, 0, 0);
+    break;
+  case 2  :
+    PImage img2 = createImage(kinectWidth, kinectHeight, RGB);
+    img2.loadPixels();
+    for (int i = 0; i < kinectSize; i++)
+    {
+      img2.pixels[i] = color((int)map(meanDepth[i], 0, 2048, 255, 0));
+    }
+    img2.updatePixels();
+    image(img2, 0, 0);
+    break;
+  case 3  :
+    PImage img3 = createImage(kinectWidth, kinectHeight, RGB);
+    img3.loadPixels();
+    for (int i = 0; i < kinectSize; i++)
+    {
+      img3.pixels[i] = color((int)map(stndDepth[i], 0, 2048, 0, 255));
+    }
+    img3.updatePixels();
+    image(img3, 0, 0);
+    break;
+  }
+}
+
+
 
 void keyPressed()
 {
@@ -125,67 +156,6 @@ void keyPressed()
     println(kinectFrame);
     break;
   }
-}
-
-void showDepth(int kinectFrame)
-{
-  switch (kinectFrame)
-  {
-  case 0  :
-    pushMatrix();
-    scale(-1, 1);
-    image(kinect.getDepthImage(), -kinectWidth, 0);
-    popMatrix();
-    break;
-  case 1  :
-    PImage img1 = createImage (kinectWidth, kinectHeight, RGB);
-    img1.loadPixels();
-    for (int i = 0; i < kinectSize; i++)
-    {
-      img1.pixels[i] = color((int)map(depth[i], 0, 2048, 255, 0));
-    }
-    img1.updatePixels();
-    pushMatrix();
-    scale(-1, 1);
-    image(img1, -kinectWidth, 0);
-    popMatrix();
-    break;
-  case 2  :
-    PImage img2 = createImage (kinectWidth, kinectHeight, RGB);
-    img2.loadPixels();
-    for (int i = 0; i < kinectSize; i++)
-    {
-      img2.pixels[i] = color((int)map(meanDepth[i], 0, 2048, 255, 0));
-    }
-    img2.updatePixels();
-    pushMatrix();
-    scale(-1, 1);
-    image(img2, -kinectWidth, 0);
-    popMatrix();
-    break;
-  case 3  :
-    PImage img3 = createImage (kinectWidth, kinectHeight, RGB);
-    img3.loadPixels();
-    for (int i = 0; i < kinectSize; i++)
-    {
-      img3.pixels[i] = color((int)(map(stndDepth[i], 0, 2048, 0, 255)));
-    }
-    img3.updatePixels();
-    pushMatrix();
-    scale(-1, 1);
-    image(img3, -kinectWidth, 0);
-    popMatrix();
-    break;
-  default  :
-    break;
-  }
-}
-
-float rawDepthToMeters(int depthValue) {
-  if (depthValue < 2048) {
-    return (float)(1.0 / ((double)(depthValue) * -0.0030711016 + 3.3309495161));
-  }
-  return 0.0f;
 }
 
 void top (int[] inData, int[] topArray, int[] topIndex) {

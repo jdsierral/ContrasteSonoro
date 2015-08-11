@@ -84,7 +84,8 @@ String kinectText (int amount)
       ", " + kinectPos1.z + ")\n" +
       "kinectPos2 = " + "("  + kinectPos2.x + 
       ", " + kinectPos2.y +
-      ", " + kinectPos2.z + ")"
+      ", " + kinectPos2.z + ")\n" +
+      "kinectFrame = " + kinectFrame
 
       ;
   }
