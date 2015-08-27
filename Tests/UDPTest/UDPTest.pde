@@ -2,16 +2,23 @@ import oscP5.*;
 import netP5.*;
 
 OscP5 osc;
-NetAddress mac1;
+NetAddress CS1;
+NetAddress CS2;
 
 //======
 
 PVector pos = new PVector();
 PVector pos2 = new PVector();
 int r = 20;
-String myIP = NetInfo.lan();
-int port = 7777;
+int[] port = {
+  12001, 12002
+};
+String[] IP = {
+  "192.168.0.101", "192.168.0.102"
+};
 
+String myIP = NetInfo.lan();
+int myPort;
 
 //======
 
@@ -19,10 +26,18 @@ void setup()
 {
   size(640, 480);
 
-  osc = new OscP5(this, port);
-  mac1 = new NetAddress (myIP, port);
+  for (int i = 0; i < 2; i++) {
+    if (myIP.equals(IP[i])) myPort = port[i];
+  }
 
-  pos.x = width/2;
+  println("YOUR IP AND PORTS ARE: " + myIP + ", " + myPort);
+
+  osc = new OscP5(this, myPort);    //this mac port; //<>//
+
+  CS1 = new NetAddress(IP[0], port[0]); //<>//
+  CS2 = new NetAddress(IP[1], port[1]); //<>//
+
+  pos.x = width/2; //<>//
   pos.y = height/2;
   pos2.x = width/2;
   pos2.y = height/2;
@@ -45,7 +60,8 @@ void draw()
   msg.add(pos.array());
   bndlMsg.add(msg);
 
-  osc.send(bndlMsg, mac1);
+  if (!myIP.equals(IP[0])) osc.send(bndlMsg, CS1);
+  if (!myIP.equals(IP[1])) osc.send(bndlMsg, CS2); //<>//
 }
 
 void oscEvent(OscMessage msg) {
@@ -56,4 +72,3 @@ void oscEvent(OscMessage msg) {
     }
   }
 }
-
