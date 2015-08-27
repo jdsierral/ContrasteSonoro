@@ -1,6 +1,6 @@
 void initRoutine ()
 {
-   if (setup[0]==1) {
+  if (setup[0]==1) {
     netEnabled = true;
   } else {
     netEnabled = false;
@@ -25,8 +25,6 @@ void initRoutine ()
   } else {
     refTextEnabled = false;
   }
-  
-  
-    textPos = new PVector (20, height - 200);
-
+  textPos = new PVector (20, height - 200);
 }
+

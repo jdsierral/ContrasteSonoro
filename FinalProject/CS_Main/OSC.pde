@@ -41,14 +41,14 @@ void oscRoutine()
   bundleMsg.add(leapLMsg);
   bundleMsg.add(leapRMsg);
   bundleMsg.add(kinectMsg);
-
+  osc.send(bundleMsg, CS0);
   if (!myIP.equals(IP[0]))
   {
     osc.send(bundleMsg, CS0);
   }
   if (!myIP.equals(IP[1]))
   {
-//    osc.send(bundleMsg, CS1);
+    osc.send(bundleMsg, CS1);
   }
   if (!myIP.equals(IP[2]))
   {
