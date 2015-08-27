@@ -25,8 +25,8 @@ import oscP5.*;
 import netP5.*;
 
 import org.openkinect.*;
-import org.openkinect.processing.tests.*;
 import org.openkinect.processing.*;
+import org.openkinect.processing.tests.*;
 
 import de.voidplus.leapmotion.*;
 import development.*;
@@ -200,10 +200,9 @@ void draw() {
 void stop() {
   if (kinectEnabled)
   {
-    kinect.quit();
+    //kinect.quit();
   }
   super.stop();
 }
 
 //=========================================================================//
-
