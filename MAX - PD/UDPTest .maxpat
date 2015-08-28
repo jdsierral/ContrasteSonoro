@@ -70,7 +70,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1523.0, 158.0, 151.0, 105.0 ],
+						"rect" : [ 1141.0, 187.0, 151.0, 105.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -333,7 +333,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1688.0, 731.0, 163.0, 151.0 ],
+						"rect" : [ 1306.0, 760.0, 163.0, 151.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -1988,7 +1988,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1523.0, 731.0, 163.0, 151.0 ],
+						"rect" : [ 1141.0, 760.0, 163.0, 151.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3643,7 +3643,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1364.0, 731.0, 163.0, 151.0 ],
+						"rect" : [ 982.0, 760.0, 163.0, 151.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -5298,7 +5298,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1199.0, 731.0, 163.0, 151.0 ],
+						"rect" : [ 817.0, 760.0, 163.0, 151.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -6953,7 +6953,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1040.0, 731.0, 163.0, 151.0 ],
+						"rect" : [ 658.0, 760.0, 163.0, 151.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -8608,7 +8608,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 875.0, 731.0, 163.0, 151.0 ],
+						"rect" : [ 493.0, 760.0, 163.0, 151.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -10263,7 +10263,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 710.0, 731.0, 163.0, 151.0 ],
+						"rect" : [ 328.0, 760.0, 163.0, 151.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -11918,7 +11918,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 551.0, 731.0, 163.0, 151.0 ],
+						"rect" : [ 169.0, 760.0, 163.0, 151.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -13573,7 +13573,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 386.0, 731.0, 163.0, 151.0 ],
+						"rect" : [ 4.0, 760.0, 163.0, 151.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -15542,7 +15542,7 @@
 													"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 2.0, 3.0, 360.0, 155.0 ],
-													"setfilter" : [ 0, 2, 1, 0, 0, 1016.043579, 0.38901, 1.8, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+													"setfilter" : [ 0, 2, 1, 0, 0, 5910.418457, 0.38901, 2.2, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 													"style" : "",
 													"varname" : "filtergraph~"
 												}
@@ -15995,7 +15995,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 60.0, 937.0, 120.0, 210.0 ],
+						"rect" : [ -322.0, 966.0, 120.0, 210.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -20395,7 +20395,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 227.0, 731.0, 163.0, 151.0 ],
+						"rect" : [ -155.0, 760.0, 163.0, 151.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -24074,6 +24074,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -24144,9 +24145,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
-									"patching_rect" : [ 18.0, 85.800003, 116.0, 22.0 ],
+									"patching_rect" : [ 18.0, 85.800003, 106.0, 22.0 ],
 									"style" : "",
-									"text" : "OSC-route /position"
+									"text" : "OSC-route /kinect"
 								}
 
 							}
@@ -24228,7 +24229,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1361.0, 158.0, 151.0, 105.0 ],
+						"rect" : [ 979.0, 187.0, 151.0, 105.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
