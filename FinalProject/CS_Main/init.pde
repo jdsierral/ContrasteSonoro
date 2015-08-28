@@ -27,4 +27,3 @@ void initRoutine ()
   }
   textPos = new PVector (20, height - 200);
 }
-

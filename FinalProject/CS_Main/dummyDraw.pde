@@ -14,27 +14,41 @@ void dummyDraw()
 void drawKinect()
 {
   showDepth(kinectFrame);
-  ellipse(kinectPos1.x, kinectPos1.y, kinectPos1.z, kinectPos1.z);
-  ellipse(kinectPos2.x, kinectPos2.y, kinectPos2.z, kinectPos2.z);
+  ellipse(kinectPos1.x/2, kinectPos1.y/2, kinectPos1.z/2, kinectPos1.z/2);
+  ellipse(kinectPos2.x * 3.2 + kinectWidth/2, (100 - kinectPos2.y) * 2.4, kinectPos2.z, kinectPos2.z);
+  noFill();
+  stroke(0);
+  rect(0, 0, kinectWidth/2, kinectHeight/2);
+  rect(kinectWidth/2, 0, kinectWidth/2, kinectHeight/2);
 }
 
 void drawLeap()
 {
   //Left and Right proper hand positions
-
+  pushMatrix();
+  scale(0.5, 0.5);
+  translate(0, kinectHeight/2);
   drawHand(leapPosL1.x, leapPosL1.y, leapPosL1.z, 
   leapDynL1.x, leapDynL1.y, leapDynL1.z, leapGrabL1, color(255, 0, 0));
 
   drawHand(leapPosR1.x, leapPosR1.y, leapPosR1.z, 
   leapDynR1.x, leapDynR1.y, leapDynR1.z, leapGrabR1, color(0, 255, 0));
+  popMatrix();
+  noFill();
+  rect(0, kinectHeight/2, kinectWidth/2, kinectHeight/2);
 
   //Left and Right alien hand positions
-
+  pushMatrix();
+  translate(kinectWidth/2, kinectHeight/2);
+  scale(0.5,0.5);
   drawHand(leapPosL2.x, leapPosL2.y, leapPosL2.z, 
   leapDynL2.x, leapDynL2.y, leapDynL2.z, leapGrabL2, color(255, 255, 0));
 
   drawHand(leapPosR2.x, leapPosR2.y, leapPosR2.z, 
   leapDynR2.x, leapDynR2.y, leapDynR2.z, leapGrabR2, color(0, 255, 255));
+  popMatrix();
+  noFill();
+  rect(kinectWidth/2, kinectHeight/2, kinectWidth/2, kinectHeight/2);
 }
 
 void drawHand(float x, float y, float z, 
@@ -56,7 +70,7 @@ float grab, color c)
 void showDepth(int kinectFrame)
 { 
   pushMatrix();
-  scale(-1, 1);
+  scale(-0.5, 0.5);
   translate(-kinectWidth, 0); 
   switch (kinectFrame)
   {
@@ -96,4 +110,3 @@ void showDepth(int kinectFrame)
   }
   popMatrix();
 }
-

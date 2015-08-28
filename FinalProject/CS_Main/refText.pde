@@ -11,10 +11,10 @@ void refTextRoutine()
   }
   if (netEnabled)
   {
-    text(myIP + ", " + myPort, textPos.x, 50);
+    text(myIP + ", " + myPort, textPos.x, 650);
     for (int i = 0; i < 2; i++)
     {
-      text(IP[i] + ", " + port[i], textPos.x, 65 + 15 * i);
+      text(IP[i] + ", " + port[i], textPos.x + width/2, 665 + 15 * i);
     }
   }
 }
@@ -95,4 +95,3 @@ String kinectText (int amount)
   }
   return ref;
 } 
-
