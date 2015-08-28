@@ -81,6 +81,8 @@ void mouseWheel(MouseEvent event)
   {
     pos.z = height/2;
   }
+=======
+>>>>>>> Stashed changes
 }
 
 void oscEvent(OscMessage msg) {
