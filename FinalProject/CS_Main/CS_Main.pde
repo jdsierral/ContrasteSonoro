@@ -34,9 +34,10 @@ import development.*;
 //=========================================================================//
 
 OscP5 osc;
-NetAddress CS0;  //Contraste Sonoro Admin
-NetAddress CS1;  //Contraste Sonoro 1
-NetAddress CS2;  //Contraste Sonoro 2
+NetAddress CS1Pro;
+NetAddress CS2Pro;
+NetAddress CS1Max;
+NetAddress CS2Max;
 LeapMotion leap;
 Kinect kinect;
 
@@ -55,12 +56,8 @@ boolean dummyDrawEnabled;
 boolean refTextEnabled;
 //UDP STUFF
 
-int[] port = {
-  7777, 12001, 12002
-};
-String[] IP = {
-  "10.151.203.100", "192.168.0.101", "192.168.0.102"
-};
+int[] port = {12001, 12002, 12011, 12012};
+String[] IP = {"192.168.0.101", "192.168.0.102"};
 
 String myIP = NetInfo.lan();
 int myPort;
@@ -196,23 +193,14 @@ void draw() {
 
 //=========================================================================//
 
-
-<<<<<<< Updated upstream
 void stop() {
   if (kinectEnabled)
   {
-    //kinect.quit();
+    kinect.quit();
   }
   super.stop();
 }
-=======
-//void stop() {
-//  if (kinectEnabled)
-//  {
-//    kinect.quit();
-//  }
-//  super.stop();
-//}
->>>>>>> Stashed changes
+
+
 
 //=========================================================================//

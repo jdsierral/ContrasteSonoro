@@ -2,21 +2,17 @@
 
 void oscSetup()
 {
-  for (int i = 0; i <= 2; i++)
-  {
-    if (myIP.equals(IP[i]))
-    {
-      myPort = port[i];
-    }
+  for (int i = 0; i <= 2; i++) {
+    if (myIP.equals(IP[i])) myPort = port[i];
   }
-
-  println(myIP + ", " + myPort);
+  println("YOUR IP AND PORT: " + myIP + ", " + myPort);
 
   osc = new OscP5(this, myPort);    //this mac port;
 
-  CS0 = new NetAddress(IP[0], port[0]);    //Admin for TroubleShooting
-  CS1 = new NetAddress(IP[1], port[1]);
-  CS2 = new NetAddress(IP[2], port[2]);
+  CS1Pro = new NetAddress(IP[0], port[0]);
+  CS2Pro = new NetAddress(IP[1], port[1]);
+  CS1Max = new NetAddress(IP[1], port[2]);
+  CS2Max = new NetAddress(IP[1], port[3]);
 }
 
 //SEND
@@ -41,19 +37,11 @@ void oscRoutine()
   bundleMsg.add(leapLMsg);
   bundleMsg.add(leapRMsg);
   bundleMsg.add(kinectMsg);
-  osc.send(bundleMsg, CS0);
-  if (!myIP.equals(IP[0]))
-  {
-    osc.send(bundleMsg, CS0);
-  }
-  if (!myIP.equals(IP[1]))
-  {
-    osc.send(bundleMsg, CS1);
-  }
-  if (!myIP.equals(IP[2]))
-  {
-    osc.send(bundleMsg, CS2);
-  }
+  
+  if (!myIP.equals(IP[0])) osc.send(bundleMsg, CS1Pro);
+  if (!myIP.equals(IP[1])) osc.send(bundleMsg, CS2Pro);
+  if (myIP.equals(IP[0])) osc.send(bundleMsg, CS1Max);
+  if (myIP.equals(IP[1])) osc.send(bundleMsg, CS2Max);
 }
 
 //    RECEIVE
@@ -95,4 +83,3 @@ void oscEvent(OscMessage dataIn) {
     }
   }
 }
-

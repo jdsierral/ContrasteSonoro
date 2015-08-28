@@ -37,7 +37,7 @@ void setup()
   CS1Max = new NetAddress(IP[1], port[2]); //<>//
   CS2Max = new NetAddress(IP[1], port[3]);
 
-  pos.x = width/2; //<>//
+  pos.x = width/2;
   pos.y = height/2; //<>//
   pos2.x = width/2;
   pos2.y = height/2;
@@ -57,12 +57,14 @@ void draw()
 
   OscBundle bndlMsg = new OscBundle();
   OscMessage msg = new OscMessage ("/position");
-  msg.add(pos.array());
+  msg.add(100 * (pos.x/width));
+  msg.add(100 * (1 - pos.y/height));
+  msg.add(100 * (2 * pos.z/height));
   bndlMsg.add(msg);
 
-  if (!myIP.equals(IP[0])) osc.send(bndlMsg, CS1Pro);
+  if (!myIP.equals(IP[0])) osc.send(bndlMsg, CS1Pro); //<>//
   if (!myIP.equals(IP[1])) osc.send(bndlMsg, CS2Pro);
-  if (myIP.equals(IP[0])) osc.send(bndlMsg, CS1Max); //<>//
+  if (myIP.equals(IP[0])) osc.send(bndlMsg, CS1Max);
   if (myIP.equals(IP[1])) osc.send(bndlMsg, CS2Max);
 }
 
