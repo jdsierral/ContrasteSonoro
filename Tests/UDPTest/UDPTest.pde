@@ -32,14 +32,13 @@ void setup()
   println("YOUR IP AND PORT: " + myIP + ", " + myPort);
 
   osc = new OscP5(this, myPort);    //this mac port; //<>//
-
-  CS1Pro = new NetAddress(IP[0], port[0]); //<>//
+  CS1Pro = new NetAddress(IP[0], port[0]);
   CS2Pro = new NetAddress(IP[1], port[1]); //<>//
-  CS1Max = new NetAddress(IP[1], port[2]);
+  CS1Max = new NetAddress(IP[1], port[2]); //<>//
   CS2Max = new NetAddress(IP[1], port[3]);
 
   pos.x = width/2; //<>//
-  pos.y = height/2;
+  pos.y = height/2; //<>//
   pos2.x = width/2;
   pos2.y = height/2;
 }
@@ -62,8 +61,8 @@ void draw()
   bndlMsg.add(msg);
 
   if (!myIP.equals(IP[0])) osc.send(bndlMsg, CS1Pro);
-  if (!myIP.equals(IP[1])) osc.send(bndlMsg, CS2Pro); //<>//
-  if (myIP.equals(IP[0])) osc.send(bndlMsg, CS1Max);
+  if (!myIP.equals(IP[1])) osc.send(bndlMsg, CS2Pro);
+  if (myIP.equals(IP[0])) osc.send(bndlMsg, CS1Max); //<>//
   if (myIP.equals(IP[1])) osc.send(bndlMsg, CS2Max);
 }
 
@@ -81,8 +80,6 @@ void mouseWheel(MouseEvent event)
   {
     pos.z = height/2;
   }
-=======
->>>>>>> Stashed changes
 }
 
 void oscEvent(OscMessage msg) {
