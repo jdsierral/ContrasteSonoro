@@ -2,7 +2,7 @@
 
 void oscSetup()
 {
-  for (int i = 0; i <= 2; i++) {
+  for (int i = 0; i < 2; i++) {
     if (myIP.equals(IP[i])) myPort = port[i];
   }
   println("YOUR IP AND PORT: " + myIP + ", " + myPort);
@@ -32,7 +32,9 @@ void oscRoutine()
   leapRMsg.add(leapGrabR1);
 
   OscMessage kinectMsg = new OscMessage("/kinect");
-  kinectMsg.add(kinectPos1.array());
+  kinectMsg.add(map(kinectPos1.x, 0, kinectWidth, 0, 100));
+  kinectMsg.add(map(kinectPos1.y, 0, kinectHeight, 100, 0));
+  kinectMsg.add(kinectPos1.z);
 
   bundleMsg.add(leapLMsg);
   bundleMsg.add(leapRMsg);
