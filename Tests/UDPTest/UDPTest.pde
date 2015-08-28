@@ -11,7 +11,6 @@ NetAddress CS2Max;
 
 PVector pos = new PVector();
 PVector pos2 = new PVector();
-int r = 20;
 int[] port = {
   12001, 12002, 12011, 12012
 };
@@ -36,7 +35,7 @@ void setup()
 
   CS1Pro = new NetAddress(IP[0], port[0]); //<>//
   CS2Pro = new NetAddress(IP[1], port[1]); //<>//
-  CS1Max = new NetAddress(IP[0], port[2]);
+  CS1Max = new NetAddress(IP[1], port[2]);
   CS2Max = new NetAddress(IP[1], port[3]);
 
   pos.x = width/2; //<>//
@@ -53,9 +52,9 @@ void draw()
   pos.y = mouseY;
 
   fill (0, 0, 255);
-  ellipse (pos.x, pos.y, r, r);
+  ellipse (pos.x, pos.y, pos.z, pos.z);
   fill (0, 255, 0);
-  ellipse (pos2.x+10, pos2.y+10, r, r);
+  ellipse (pos2.x+10, pos2.y+10, pos2.z, pos2.z);
 
   OscBundle bndlMsg = new OscBundle();
   OscMessage msg = new OscMessage ("/position");
@@ -64,8 +63,24 @@ void draw()
 
   if (!myIP.equals(IP[0])) osc.send(bndlMsg, CS1Pro);
   if (!myIP.equals(IP[1])) osc.send(bndlMsg, CS2Pro); //<>//
-  osc.send(bndlMsg, CS2Max);
-  osc.send(bndlMsg, CS2Max);
+  if (myIP.equals(IP[0])) osc.send(bndlMsg, CS1Max);
+  if (myIP.equals(IP[1])) osc.send(bndlMsg, CS2Max);
+}
+
+void mouseWheel(MouseEvent event)
+{
+  if (pos.z >= 0 && pos.z <= height/2) 
+  {
+    float e = 1; 
+    e = event.getCount();
+    pos.z += e;
+  } else if (pos.z < 0) 
+  {
+    pos.z = 0;
+  } else if (pos.z > height/2)
+  {
+    pos.z = height/2;
+  }
 }
 
 void oscEvent(OscMessage msg) {
@@ -73,6 +88,7 @@ void oscEvent(OscMessage msg) {
     if (msg.checkTypetag("fff")) {
       pos2.x = msg.get(0).floatValue();
       pos2.y = msg.get(1).floatValue();
+      pos2.z = msg.get(2).floatValue();
     }
   }
 }
