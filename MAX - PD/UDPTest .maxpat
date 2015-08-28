@@ -39,6 +39,9 @@
 		"boxes" : [ 			{
 				"box" : 				{
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 175f8e5... MAX patch
 					"id" : "obj-25",
 					"maxclass" : "dial",
 					"numinlets" : 1,
@@ -47,6 +50,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 313.0, 345.600006, 40.0, 40.0 ],
 					"style" : ""
+<<<<<<< HEAD
 =======
 					"bgmode" : 0,
 					"border" : 0,
@@ -25384,6 +25388,8 @@
 					"hidden" : 0,
 					"source" : [ "obj-77", 0 ]
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 175f8e5... MAX patch
 				}
 
 			}
@@ -25604,6 +25610,7 @@
  ],
 		"dependency_cache" : [ 			{
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 				"name" : "Magna Brass & Woodwinds.wav",
 				"bootpath" : "~/Desktop/Magna",
@@ -25660,6 +25667,8 @@
 			}
 , 			{
 >>>>>>> origin/master
+=======
+>>>>>>> parent of 175f8e5... MAX patch
 				"name" : "OSC-route.mxo",
 				"type" : "iLaX"
 			}
