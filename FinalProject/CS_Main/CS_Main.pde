@@ -10,9 +10,9 @@
 /*
 /*
 /*          TODO LIST
-/*  - insert Constrains in leap variables
-/*  - insert mappings in leap variables
-/*  - 
+/*  
+/*  
+/*  
 /*
 /*
 /*
@@ -21,6 +21,12 @@
  */
 //=========================================================================//
 
+/* Librerías necesarias para Correr el software
+- Osc P5 y NetP5 para utilizar el protocolo OSC a través de puertos UDP en una
+red Interna
+- Open Kinect para el uso del Kinect
+- LeapMotion para usar el LEAP
+*/
 import oscP5.*;
 import netP5.*;
 
@@ -31,9 +37,22 @@ import org.openkinect.processing.tests.*;
 import de.voidplus.leapmotion.*;
 import development.*;
 
+import themidibus.*;
+
 //=========================================================================//
 
+// Declarar Nombres de clases correspondientes
+/*
+CS -> contraste Sonoro
+CS1Pro Contraste Sonoro computador 1 Processing
+CS2Pro Contraste Sonoro compudador 2 Processing
+CS1Max Contraste Sonoro computador 1 MAX/MSP
+CS2Max Contraste Sonoro compudador 2 MAX/MSP (acutalmente no se utiliza y
+posteriormente podría funcionar como el puerto del software de VJ)
+*/
+
 OscP5 osc;
+MidiBus midiBus;
 NetAddress CS1Pro;
 NetAddress CS2Pro;
 NetAddress CS1Max;
@@ -45,14 +64,23 @@ Kinect kinect;
 ////////////////////////////////GLOBAL VARIABLES/////////////////////////////
 //=========================================================================//
 
-int[] setup = {1, 1, 1, 1, 1};
+/*
+¡¡¡El Siguiente vector indica las partes del software que estarán activas!!!
+el vector corresponde con los booleanos siguientes en el orden correspondiente
+*/
+int[] setup = {1, 1, 1, 1, 1, 1};
 
-boolean netEnabled;
-boolean leapEnabled;
-boolean kinectEnabled;
-boolean dummyDrawEnabled;
-boolean refTextEnabled;
+boolean netEnabled; //Conexión de Red
+boolean leapEnabled;//Leap
+boolean kinectEnabled;//Kinect
+boolean dummyDrawEnabled;//Visualización de la Info en Processing
+boolean refTextEnabled;//Visualización del texto de la info en processing
+boolean midiBusEnabled;//Bus MIDI
 //UDP STUFF
+/*Declaración de Puertos utilizados para transmisión de datos por red interna
+Declaración de direcciones IP
+En Ambos casos se utilizan vectores para alojar toda la información en un
+único paquete*/
 
 int[] port = {12001, 12002, 12011, 12012};
 String[] IP = {"192.168.0.101", "192.168.0.102"};
@@ -69,16 +97,20 @@ int meanSize = 100;
 int meanLength = 50;
 int meanFactor = 5; // change later to 3 at least
 
-int deg = 0;
+/////////////(Cambiar a dependiendo de la instalación)//////////////
+int deg = 0; //Ángulo Inicial de inclinación del Kinect  
 float accuracy = 15;
 
-int kinectSize = 307200;
-int kinectWidth = 640;
-int kinectHeight = 480;
+int kinectSize = 307200; //Tamaño del frame en pixeles
+int kinectWidth = 640; //Anchura del frame
+int kinectHeight = 480; //Altura del frame
 
-int[] depth = new int[kinectSize];
-int[] meanDepth = new int[kinectSize];
-float[] stndDepth = new float[kinectSize];
+int[] depth = new int[kinectSize]; 
+//Vector que alberca el mapa de profundidades 
+int[] meanDepth = new int[kinectSize]; 
+//Vector que alberga el mapa del promedio de las profundidades
+float[] stndDepth = new float[kinectSize]; 
+//Vector que alberga el mapa de la desviación típica de las profundidades
 
 int threshold = 5;
 int stiffness = 2;
@@ -88,36 +120,38 @@ int kinectFrame = 0;
 
 PVector pos = new PVector();
 
-PVector kinectPos1 = new PVector ();
-PVector kinectPos2 = new PVector ();
+PVector kinectPos1 = new PVector (); //Posición del Kinect 1
+PVector kinectPos2 = new PVector (); //Posición del Kinect 2
 
 //=========================================================================//
 ////////////////////////////////// LEAP STUFF////////////////////////////////
 //=========================================================================//
 
-boolean stabilization = false;
-boolean isLeft1, isRight1;
-float leapGrabL1;
-PVector leapPosL1 = new PVector ();
-PVector leapDynL1 = new PVector ();
-float leapGrabR1;
-PVector leapPosR1 = new PVector ();
-PVector leapDynR1 = new PVector ();
+
+boolean stabilization = false; //Indicador de activación de la estabilización
+
+boolean isLeft1, isRight1; //Indicador de si la mano es izquierda o derecha
+float leapGrabL1; //Medición de qué tan cerrada está la mano izq 1
+PVector leapPosL1 = new PVector (); //Posición cartesiana de la mano izq 1
+PVector leapDynL1 = new PVector (); //Posición rotacional de la mano izq 1
+float leapGrabR1; //Medición de qué tan cerrada está la mano der 1 
+PVector leapPosR1 = new PVector (); //Posición cartesiana de la mano Der 1
+PVector leapDynR1 = new PVector (); //Posición rotacional de la mano Der 1
 //=========================================================================//
 
-boolean isLeft2, isRight2;
-float leapGrabL2;
-PVector leapPosL2 = new PVector ();
-PVector leapDynL2 = new PVector ();
-float leapGrabR2;
-PVector leapPosR2 = new PVector ();
-PVector leapDynR2 = new PVector ();
+boolean isLeft2, isRight2; //Indicador de si la mano es izquierda o derecha
+float leapGrabL2; //Medición de qué tan cerrada está la mano izq 2
+PVector leapPosL2 = new PVector (); //Posición cartesiana de la mano izq 2
+PVector leapDynL2 = new PVector (); //Posición rotacional de la mano izq 2
+float leapGrabR2; //Medición de qué tan cerrada está la mano der 2
+PVector leapPosR2 = new PVector (); //Posición cartesiana de la mano Der 2
+PVector leapDynR2 = new PVector (); //Posición rotacional de la mano Der 2 
 
 //=========================================================================//
 ////////////////////////////////GRAPHIC STUFF////////////////////////////////
 //=========================================================================//
 
-PVector textPos;
+PVector textPos; //Posición inicial del Texto
 int info = 0;
 
 //=========================================================================//
@@ -126,14 +160,24 @@ int info = 0;
 //=========================================================================//
 
 void setup() {
-  size (640, 720, P3D);
-  background(255);
+  size (640, 720, P3D); //Tamaño de la pantalla
+  background(255); //Color del fondo
 
+  //////Rutina de inicialización/////
   initRoutine();
 
   if (netEnabled)
   {
     oscSetup();
+  }
+  
+  if (midiBusEnabled)
+  {
+    if (!midiInit)
+    {
+      midiBusSetup();
+    }
+    midiRoutine();
   }
 
   if (leapEnabled)
@@ -146,6 +190,8 @@ void setup() {
     kinectSetup();
   }
 
+  ////////////Imprimir a consola el estado de la inicialización//////////////
+  
   println("Net: " + netEnabled);
   println("Leap: " + leapEnabled);
   println("Kinect: " + kinectEnabled);
@@ -157,6 +203,19 @@ void setup() {
 //=========================================================================//
 
 void draw() {
+  /*
+  En Cada uno de los fotogramas, se corre una rutina para cada uno de los
+  sistema implementados.
+  Para ver el desarrollo de cada uno de los sistemas saltar a la 
+  correspondiente pestaña
+  Leap -> leap
+  Kinect -> kinect
+  UDP y OSC -> OSC
+  Representación Gráfica -> dummyDraw
+  Texto de Referencia -> refText
+  */
+  
+  
   background(255);
 
   if (leapEnabled)

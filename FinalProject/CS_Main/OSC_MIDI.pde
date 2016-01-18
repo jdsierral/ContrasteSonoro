@@ -1,10 +1,12 @@
-//       SEND
+//      SETUP SEND
 
 void oscSetup()
 {
+  //Configuración de los puertos
   for (int i = 0; i < 2; i++) {
     if (myIP.equals(IP[i])) myPort = port[i];
   }
+  //Imprimir la dirección IP y puerto del presente sistema
   println("YOUR IP AND PORT: " + myIP + ", " + myPort);
 
   osc = new OscP5(this, myPort);    //this mac port;
@@ -15,10 +17,26 @@ void oscSetup()
   CS2Max = new NetAddress(IP[1], port[3]);
 }
 
+void midiBusSetup()
+{
+  MidiBus.list();
+  midiBus = new MidiBus(this, -1, 1);
+}
+
+void midiRoutine()
+{
+  midiBus.sendControllerChange (0, 50, map(kinectPos1.x, 0, kinectWidth, 0, 127)));
+  midiBus.sendControllerChange (0, 51, map(kinectPos1.y, 0, kinectHeight, 0, 127)));
+  midiBus.sendControllerChange (0, 52, map(kinectPos1.z, 0, 120, 0, 127)));
+  
+  
+}
+
 //SEND
 
 void oscRoutine()
 {
+  //Creación y envío de los mensajes OSC
   OscBundle bundleMsg = new OscBundle();
 
   OscMessage leapLMsg = new OscMessage("/leapL");
