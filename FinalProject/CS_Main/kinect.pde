@@ -1,10 +1,9 @@
 void kinectSetup()
 {
   kinect = new Kinect (this);
-  kinect.start();
 
-  kinect.enableDepth(true);
-  kinect.tilt(deg);
+  kinect.initDepth();
+  kinect.setTilt(deg);
 }
 
 void kinectInit()
@@ -69,4 +68,3 @@ void kinectAnalisis()
   kinectPos1.y = pos.y;
   kinectPos1.z = map(topArray[0], 0, 1024, 100, 0);
 }
-

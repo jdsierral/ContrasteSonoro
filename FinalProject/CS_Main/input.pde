@@ -55,14 +55,14 @@ void keyPressed()
       deg++;
       if (kinectEnabled)
       {
-        kinect.tilt(deg);
+        kinect.setTilt(deg);
       }
       break;
     case DOWN :
       deg--;
       if (kinectEnabled)
       {
-        kinect.tilt(deg);
+        kinect.setTilt(deg);
       }
       break;
     case LEFT  :
@@ -76,4 +76,3 @@ void keyPressed()
     break;
   }
 }
-

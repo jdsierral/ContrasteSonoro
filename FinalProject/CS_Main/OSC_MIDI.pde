@@ -21,15 +21,14 @@ void midiBusSetup()
 {
   MidiBus.list();
   midiBus = new MidiBus(this, -1, 1);
+  midiInit = true;
 }
 
 void midiRoutine()
 {
-  midiBus.sendControllerChange (0, 50, map(kinectPos1.x, 0, kinectWidth, 0, 127)));
-  midiBus.sendControllerChange (0, 51, map(kinectPos1.y, 0, kinectHeight, 0, 127)));
-  midiBus.sendControllerChange (0, 52, map(kinectPos1.z, 0, 120, 0, 127)));
-  
-  
+  midiBus.sendControllerChange (0, 50, (int)map(kinectPos1.x, 0, kinectWidth, 0, 127));
+  midiBus.sendControllerChange (0, 51, (int)map(kinectPos1.y, 0, kinectHeight, 0, 127));
+  midiBus.sendControllerChange (0, 52, (int)map(kinectPos1.z, 0, 120, 0, 127));  
 }
 
 //SEND

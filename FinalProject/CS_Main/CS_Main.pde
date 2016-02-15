@@ -1,3 +1,6 @@
+
+
+
 //=========================================================================//
 /*
 /*                                Kinect-Leap-UDP
@@ -30,9 +33,10 @@ red Interna
 import oscP5.*;
 import netP5.*;
 
-import org.openkinect.*;
+import org.openkinect.freenect.*;
+import org.openkinect.freenect2.*;
 import org.openkinect.processing.*;
-import org.openkinect.processing.tests.*;
+import org.openkinect.tests.*;
 
 import de.voidplus.leapmotion.*;
 import development.*;
@@ -87,6 +91,8 @@ String[] IP = {"192.168.0.101", "192.168.0.102"};
 
 String myIP = NetInfo.lan();
 int myPort;
+
+Boolean midiInit = false;
 
 
 //=========================================================================//
@@ -253,7 +259,7 @@ void draw() {
 void stop() {
   if (kinectEnabled)
   {
-    kinect.quit();
+    //kinect.quit();
   }
   super.stop();
 }
