@@ -25,5 +25,10 @@ void initRoutine ()
   } else {
     refTextEnabled = false;
   }
+  if (setup[5]==1) {
+    midiBusEnabled = true;
+  } else {
+    midiBusEnabled = false;
+  }
   textPos = new PVector (20, height - 200);
 }

@@ -183,7 +183,6 @@ void setup() {
     {
       midiBusSetup();
     }
-    midiRoutine();
   }
 
   if (leapEnabled)
@@ -241,6 +240,11 @@ void draw() {
   if (netEnabled)
   {
     oscRoutine();
+  }
+  
+  if (midiBusEnabled)
+  {
+    midiRoutine();
   }
 
   if (dummyDrawEnabled)

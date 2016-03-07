@@ -26,9 +26,66 @@ void midiBusSetup()
 
 void midiRoutine()
 {
-  midiBus.sendControllerChange (0, 50, (int)map(kinectPos1.x, 0, kinectWidth, 0, 127));
-  midiBus.sendControllerChange (0, 51, (int)map(kinectPos1.y, 0, kinectHeight, 0, 127));
-  midiBus.sendControllerChange (0, 52, (int)map(kinectPos1.z, 0, 120, 0, 127));  
+
+  if (kinectEnabled) {
+  midiBus.sendControllerChange (1, 48, (int)map(kinectPos1.x, 0, kinectWidth, 0, 127));
+  midiBus.sendControllerChange (1, 49, (int)map(kinectPos1.y, 0, kinectHeight, 0, 127));
+  midiBus.sendControllerChange (1, 50, (int)map(kinectPos1.z, 0, 120, 0, 127));
+  }
+  
+  if (leapEnabled) {
+  midiBus.sendControllerChange (3, 48, (int)map(leapPosL1.x, 0, 600, 0, 127));
+  midiBus.sendControllerChange (3, 49, (int)map(leapPosL1.y, 200, 600, 0, 127));
+  midiBus.sendControllerChange (3, 50, (int)map(leapPosL1.z, 0, 100, 0, 127));
+  midiBus.sendControllerChange (5, 48, (int)map(leapPosR1.x, 0, 600, 0, 127));
+  midiBus.sendControllerChange (5, 49, (int)map(leapPosR1.y, 200, 600, 0, 127));
+  midiBus.sendControllerChange (5, 50, (int)map(leapPosR1.z, 0, 100, 0, 127));
+  midiBus.sendControllerChange (7, 48, (int)map(leapDynL1.x, -60, 60, 0, 127));
+  midiBus.sendControllerChange (7, 49, (int)map(leapDynL1.y, -90, 90, 0, 127));
+  midiBus.sendControllerChange (7, 50, (int)map(leapDynL1.z, -50, 50, 0, 127));
+  midiBus.sendControllerChange (9, 48, (int)map(leapDynR1.x, -60, 60, 0, 127));
+  midiBus.sendControllerChange (9, 49, (int)map(leapDynR1.y, -90, 90, 0, 127));
+  midiBus.sendControllerChange (9, 50, (int)map(leapDynR1.z, -50, 50, 0, 127));
+  midiBus.sendControllerChange (11, 48, (int)map(leapGrabL1, 0, 1, 0, 127));
+  midiBus.sendControllerChange (11, 49, (int)map(leapGrabR1, 0, 1, 0, 127));
+  }
+  
+  if (netEnabled) {
+    if (kinectEnabled) {
+  midiBus.sendControllerChange (2, 48, (int)map(kinectPos2.x, 0, kinectWidth, 0, 127));
+  midiBus.sendControllerChange (2, 49, (int)map(kinectPos2.y, 0, kinectHeight, 0, 127));
+  midiBus.sendControllerChange (2, 50, (int)map(kinectPos2.z, 0, 120, 0, 127));
+    }
+    
+    if (leapEnabled) {
+  midiBus.sendControllerChange (4, 48, (int)map(leapPosL2.x, 0, 200, 0, 127));
+  midiBus.sendControllerChange (4, 49, (int)map(leapPosL2.y, 0, 200, 0, 127));
+  midiBus.sendControllerChange (4, 50, (int)map(leapPosL2.z, 0, 200, 0, 127));
+  midiBus.sendControllerChange (6, 48, (int)map(leapPosR2.x, 0, 200, 0, 127));
+  midiBus.sendControllerChange (6, 49, (int)map(leapPosR2.y, 0, 200, 0, 127));
+  midiBus.sendControllerChange (6, 50, (int)map(leapPosR2.z, 0, 200, 0, 127));
+  midiBus.sendControllerChange (8, 48, (int)map(leapDynL2.x, 0, 200, 0, 127));
+  midiBus.sendControllerChange (8, 49, (int)map(leapDynL2.y, 0, 200, 0, 127));
+  midiBus.sendControllerChange (8, 50, (int)map(leapDynL2.z, 0, 200, 0, 127));
+  midiBus.sendControllerChange (10, 48, (int)map(leapDynR2.x, 0, 200, 0, 127));
+  midiBus.sendControllerChange (10, 49, (int)map(leapDynR2.y, 0, 200, 0, 127));
+  midiBus.sendControllerChange (10, 50, (int)map(leapDynR2.z, 0, 200, 0, 127));
+  midiBus.sendControllerChange (12, 48, (int)map(leapGrabL2, 0, 1, 0, 127));
+  midiBus.sendControllerChange (12, 49, (int)map(leapGrabR2, 0, 1, 0, 127));
+    }
+  }
+  
+
+  
+  /*
+      kinect x, y, z,
+      leapPosL x, y, z
+      leapPosR x, y, z
+      leapDynL x, y, z
+      leapDynR x, y, z
+      leapGrabL
+      leapGrabR
+   */
 }
 
 //SEND
