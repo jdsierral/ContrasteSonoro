@@ -117,7 +117,7 @@ int meanFactor = 5; // change later to 3 at least
 
 /////////////(Cambiar a dependiendo de la instalación)//////////////
 int deg = 30; //Ángulo Inicial de inclinación del Kinect  
-float accuracy = 15;
+float accuracy = 25;
 
 int kinectSize = 307200; //Tamaño del frame en pixeles
 int kinectWidth = 640; //Anchura del frame

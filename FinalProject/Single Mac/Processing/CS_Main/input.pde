@@ -53,7 +53,7 @@ void keyPressed()
       if (kinectEnabled)
       {
         kinect.setTilt(deg);
-        println(deg);
+        println("tilt: " + deg);
       }
       break;
     case DOWN :
@@ -61,14 +61,16 @@ void keyPressed()
       if (kinectEnabled)
       {
         kinect.setTilt(deg);
-        println(deg);
+        println("tilt: " + deg);
       }
       break;
     case LEFT  :
       accuracy -= 0.5;
+      println("Accuracy: " + accuracy);
       break;
     case RIGHT  :
       accuracy += 0.5;
+      println("Accuracy: " + accuracy);
       break;
     }
 
