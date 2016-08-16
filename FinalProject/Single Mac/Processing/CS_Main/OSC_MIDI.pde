@@ -33,6 +33,10 @@ void midiRoutine()
   midiBus.sendControllerChange (1, 48, (int)map(kinectPos1.x, 0, kinectWidth, 0, 127));
   midiBus.sendControllerChange (1, 49, (int)map(kinectPos1.y, 0, kinectHeight, 0, 127));
   midiBus.sendControllerChange (1, 50, (int)map(kinectPos1.z, 0, 120, 0, 127));
+  } else {
+  midiBus.sendControllerChange (1, 48, (int)map(mousePos.x, 0, width, 0, 127));
+  midiBus.sendControllerChange (1, 49, (int)map(mousePos.x, 0, height, 0, 127));
+  midiBus.sendControllerChange (1, 50, (int)map(mousePos.x, 0, 255, 0, 127));
   }
   
   if (leapEnabled) {
@@ -56,7 +60,7 @@ void midiRoutine()
     if (kinectEnabled) {
   midiBus.sendControllerChange (2, 48, (int)map(kinectPos2.x, 0, kinectWidth, 0, 127));
   midiBus.sendControllerChange (2, 49, (int)map(kinectPos2.y, 0, kinectHeight, 0, 127));
-  midiBus.sendControllerChange (2, 50, (int)map(kinectPos2.z, 0, 120, 0, 127));
+  midiBus.sendControllerChange (2, 50, (int)map(kinectPos2.z, 0, 100, 0, 127));
     }
     
     if (leapEnabled) {
@@ -104,9 +108,9 @@ void oscRoutine()
   leapRMsg.add(leapGrabR1);
 
   OscMessage kinectMsg = new OscMessage("/kinect");
-  kinectMsg.add(map(kinectPos1.x, 0, kinectWidth, 0, 100));
-  kinectMsg.add(map(kinectPos1.y, 0, kinectHeight, 100, 0));
-  kinectMsg.add(kinectPos1.z);
+  kinectMsg.add(map(mousePos.x, 0, width, 0, 100));
+  kinectMsg.add(map(mousePos.y, 0, height, 100, 0));
+  kinectMsg.add(mousePos.z);
 
   bundleMsg.add(leapLMsg);
   bundleMsg.add(leapRMsg);

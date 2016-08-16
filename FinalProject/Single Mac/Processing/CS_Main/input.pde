@@ -76,3 +76,10 @@ void keyPressed()
     break;
   }
 }
+
+void mouseWheel(MouseEvent event) {
+  if (!kinectEnabled) {
+    mousePos.z = constrain(mousePos.z + event.getCount(), 0, 100);
+    println(mousePos);
+  }
+}
