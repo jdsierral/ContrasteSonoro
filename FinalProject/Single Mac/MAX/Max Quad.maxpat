@@ -406,12 +406,12 @@
 														"lowValScale" : [ 0.941176 ],
 														"numParam" : [ 0 ],
 														"typeParam" : [ 0 ],
-														"valParam" : [ 0.441176 ]
+														"valParam" : [ 0.586764 ]
 													}
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u822001537"
+													"varname" : "u320001545"
 												}
 
 											}
@@ -1134,8 +1134,8 @@
 													"patching_rect" : [ 220.0, 44.0, 75.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"enabled" : [ 1 ],
-														"pitchshift" : [ 0.849685 ],
-														"pitchshiftcent" : [ -282 ],
+														"pitchshift" : [ 1.271619 ],
+														"pitchshiftcent" : [ 416 ],
 														"quality" : "basic",
 														"reportlatency" : 0,
 														"usecents" : 0
@@ -1630,12 +1630,12 @@
 														"lowValScale" : [ 0.5 ],
 														"numParam" : [ 0 ],
 														"typeParam" : [ 0 ],
-														"valParam" : [ 0.54 ]
+														"valParam" : [ 0.99 ]
 													}
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u797001535"
+													"varname" : "u230001543"
 												}
 
 											}
@@ -2284,12 +2284,12 @@
 														"lowValScale" : [ 0.5 ],
 														"numParam" : [ 0 ],
 														"typeParam" : [ 1 ],
-														"valParam" : [ 0.001456 ]
+														"valParam" : [ 0.933187 ]
 													}
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u002001533"
+													"varname" : "u794001541"
 												}
 
 											}
@@ -3097,7 +3097,7 @@
 													"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 2.0, 3.0, 360.0, 155.0 ],
-													"setfilter" : [ 0, 2, 1, 0, 0, 49.094177, 0.986608, 5.63, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+													"setfilter" : [ 0, 2, 1, 0, 0, 18665.085938, 0.986608, 9.905, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 													"style" : "",
 													"varname" : "filtergraph~"
 												}
@@ -3752,25 +3752,25 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 500.0, 89.0, 58.0, 22.0 ],
 									"restore" : 									{
-										"mainMaster" : [ 119 ],
+										"mainMaster" : [ 77 ],
 										"mainMasterOn" : [ 1 ],
-										"subMaster1" : [ 118 ],
+										"subMaster1" : [ 76 ],
 										"subMaster1On" : [ 1 ],
 										"subMaster1Trim" : [ 3.0 ],
-										"subMaster2" : [ 118 ],
+										"subMaster2" : [ 76 ],
 										"subMaster2On" : [ 1 ],
 										"subMaster2Trim" : [ 3.0 ],
-										"subMaster3" : [ 118 ],
+										"subMaster3" : [ 76 ],
 										"subMaster3On" : [ 1 ],
 										"subMaster3Trim" : [ 3.0 ],
-										"subMaster4" : [ 118 ],
+										"subMaster4" : [ 76 ],
 										"subMaster4On" : [ 1 ],
 										"subMaster4Trim" : [ 3.0 ]
 									}
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u766001531"
+									"varname" : "u044001539"
 								}
 
 							}
@@ -4870,7 +4870,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u112001529"
+									"varname" : "u230001537"
 								}
 
 							}
@@ -6777,7 +6777,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u258001527"
+									"varname" : "u471001535"
 								}
 
 							}
@@ -8684,7 +8684,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u001001525"
+									"varname" : "u197001533"
 								}
 
 							}
@@ -10591,7 +10591,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u909001523"
+									"varname" : "u911001531"
 								}
 
 							}
@@ -12498,7 +12498,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u166001521"
+									"varname" : "u337001529"
 								}
 
 							}
@@ -14405,7 +14405,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u861001519"
+									"varname" : "u266001527"
 								}
 
 							}
@@ -16310,7 +16310,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u929001517"
+									"varname" : "u226001525"
 								}
 
 							}
@@ -18217,7 +18217,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u401001515"
+									"varname" : "u693001523"
 								}
 
 							}
@@ -20116,7 +20116,7 @@
 									"patching_rect" : [ 0.0, -68.0, 58.0, 22.0 ],
 									"restore" : 									{
 										"ang" : [ 0 ],
-										"level" : [ 63.177326 ],
+										"level" : [ 52.856434 ],
 										"on" : [ 1 ],
 										"pos" : [ 0, 0 ],
 										"rad" : [ 0 ]
@@ -20124,7 +20124,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u150001513"
+									"varname" : "u499001521"
 								}
 
 							}
@@ -22023,7 +22023,7 @@
 									"patching_rect" : [ 0.0, -68.0, 58.0, 22.0 ],
 									"restore" : 									{
 										"ang" : [ 87 ],
-										"level" : [ 41.538979 ],
+										"level" : [ 50.000004 ],
 										"on" : [ 1 ],
 										"pos" : [ 52, 48 ],
 										"rad" : [ 49 ]
@@ -22031,7 +22031,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u034001511"
+									"varname" : "u750001519"
 								}
 
 							}
@@ -23900,12 +23900,12 @@
 						"resources" : 0,
 						"resources::bpatcher[1]::bpatcher[1]" : 0,
 						"resources::bpatcher[1]::quadMonoPan" : 0,
-						"resources::bpatcher[1]::u180001497" : 0,
+						"resources::bpatcher[1]::u994001505" : 0,
 						"resources::bpatcher[1]::level" : 0,
 						"resources::bpatcher[1]::on" : 0,
 						"resources::bpatcher[1]::pos" : 0,
 						"resources::paramChanger::paramChanger" : 0,
-						"resources::paramChanger::u734001499" : 0,
+						"resources::paramChanger::u588001507" : 0,
 						"resources::paramChanger::hiValScale" : 0,
 						"resources::paramChanger::lowValScale" : 0,
 						"resources::paramChanger::numParam" : 0,
@@ -23913,7 +23913,7 @@
 						"resources::paramChanger::valParam" : 0,
 						"resources::fader[1]::fader[1]" : 0,
 						"resources::fader[1]::quadStereoPan" : 0,
-						"resources::fader[1]::u658001501" : 0,
+						"resources::fader[1]::u158001509" : 0,
 						"resources::fader[1]::ang" : 0,
 						"resources::fader[1]::level" : 0,
 						"resources::fader[1]::on" : 0,
@@ -25139,6 +25139,20 @@
 										"subpatcher_template" : "",
 										"boxes" : [ 											{
 												"box" : 												{
+													"format" : 6,
+													"id" : "obj-5",
+													"maxclass" : "flonum",
+													"numinlets" : 1,
+													"numoutlets" : 2,
+													"outlettype" : [ "", "bang" ],
+													"parameter_enable" : 0,
+													"patching_rect" : [ 307.0, 188.0, 50.0, 22.0 ],
+													"style" : ""
+												}
+
+											}
+, 											{
+												"box" : 												{
 													"id" : "obj-9",
 													"maxclass" : "newobj",
 													"numinlets" : 1,
@@ -25303,6 +25317,15 @@
 												}
 
 											}
+, 											{
+												"patchline" : 												{
+													"destination" : [ "obj-5", 0 ],
+													"disabled" : 0,
+													"hidden" : 0,
+													"source" : [ "obj-3", 0 ]
+												}
+
+											}
  ]
 									}
 ,
@@ -25432,7 +25455,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 47.0, 58.0, 605.0, 652.0 ],
+						"rect" : [ 47.0, 79.0, 605.0, 652.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -25459,6 +25482,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-10",
@@ -25497,7 +25521,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 459.0, 379.0, 121.0, 61.0 ],
+										"rect" : [ 459.0, 400.0, 121.0, 61.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -25647,12 +25671,12 @@
 														"lowValScale" : [ 0.941176 ],
 														"numParam" : [ 0 ],
 														"typeParam" : [ 0 ],
-														"valParam" : [ 0.441176 ]
+														"valParam" : [ 0.586764 ]
 													}
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u779001509"
+													"varname" : "u500001517"
 												}
 
 											}
@@ -26151,7 +26175,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 62.0, 471.0, 189.0, 45.0 ],
+										"rect" : [ 62.0, 492.0, 189.0, 45.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -26375,8 +26399,8 @@
 													"patching_rect" : [ 220.0, 44.0, 75.0, 22.0 ],
 													"saved_object_attributes" : 													{
 														"enabled" : [ 1 ],
-														"pitchshift" : [ 0.849685 ],
-														"pitchshiftcent" : [ -282 ],
+														"pitchshift" : [ 1.271619 ],
+														"pitchshiftcent" : [ 416 ],
 														"quality" : "basic",
 														"reportlatency" : 0,
 														"usecents" : 0
@@ -26721,7 +26745,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 474.0, 108.0, 121.0, 61.0 ],
+										"rect" : [ 474.0, 129.0, 121.0, 61.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -26871,12 +26895,12 @@
 														"lowValScale" : [ 0.5 ],
 														"numParam" : [ 0 ],
 														"typeParam" : [ 0 ],
-														"valParam" : [ 0.54 ]
+														"valParam" : [ 0.99 ]
 													}
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u362001507"
+													"varname" : "u780001515"
 												}
 
 											}
@@ -27375,7 +27399,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 339.0, 108.0, 121.0, 61.0 ],
+										"rect" : [ 339.0, 129.0, 121.0, 61.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -27525,12 +27549,12 @@
 														"lowValScale" : [ 0.5 ],
 														"numParam" : [ 0 ],
 														"typeParam" : [ 1 ],
-														"valParam" : [ 0.001456 ]
+														"valParam" : [ 0.933187 ]
 													}
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u006001505"
+													"varname" : "u139001513"
 												}
 
 											}
@@ -28055,7 +28079,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 62.0, 188.0, 365.0, 211.0 ],
+										"rect" : [ 62.0, 209.0, 365.0, 211.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -28338,7 +28362,7 @@
 													"outlettype" : [ "list", "float", "float", "float", "float", "list", "int" ],
 													"parameter_enable" : 0,
 													"patching_rect" : [ 2.0, 3.0, 360.0, 155.0 ],
-													"setfilter" : [ 0, 2, 1, 0, 0, 49.094177, 0.986608, 5.63, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
+													"setfilter" : [ 0, 2, 1, 0, 0, 18665.085938, 0.986608, 9.905, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0 ],
 													"style" : "",
 													"varname" : "filtergraph~"
 												}
@@ -28993,25 +29017,25 @@
 									"outlettype" : [ "", "", "", "" ],
 									"patching_rect" : [ 500.0, 89.0, 58.0, 22.0 ],
 									"restore" : 									{
-										"mainMaster" : [ 119 ],
+										"mainMaster" : [ 123 ],
 										"mainMasterOn" : [ 1 ],
-										"subMaster1" : [ 118 ],
+										"subMaster1" : [ 122 ],
 										"subMaster1On" : [ 1 ],
 										"subMaster1Trim" : [ 3.0 ],
-										"subMaster2" : [ 118 ],
+										"subMaster2" : [ 122 ],
 										"subMaster2On" : [ 1 ],
 										"subMaster2Trim" : [ 3.0 ],
-										"subMaster3" : [ 118 ],
+										"subMaster3" : [ 122 ],
 										"subMaster3On" : [ 1 ],
 										"subMaster3Trim" : [ 3.0 ],
-										"subMaster4" : [ 118 ],
+										"subMaster4" : [ 122 ],
 										"subMaster4On" : [ 1 ],
 										"subMaster4Trim" : [ 3.0 ]
 									}
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u442001503"
+									"varname" : "u850001511"
 								}
 
 							}
@@ -30125,7 +30149,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u658001501"
+													"varname" : "u158001509"
 												}
 
 											}
@@ -32140,7 +32164,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u734001499"
+													"varname" : "u588001507"
 												}
 
 											}
@@ -32756,7 +32780,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u180001497"
+													"varname" : "u994001505"
 												}
 
 											}
@@ -36917,23 +36941,23 @@
 						"clips" : [ 							{
 								"filename" : "/Users/CS1/Desktop/Audio Files/Q-MZL.wav",
 								"filekind" : "audiofile",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
+									"followglobaltempo" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"formant" : [ 1.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
 									"timestretch" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originallengthms" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"formant" : [ 1.0 ],
 									"slurtime" : [ 0.0 ],
 									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -37404,7 +37428,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u956001495"
+													"varname" : "u292001503"
 												}
 
 											}
@@ -38191,7 +38215,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u868001493"
+													"varname" : "u005001501"
 												}
 
 											}
@@ -38978,7 +39002,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u371001491"
+													"varname" : "u863001499"
 												}
 
 											}
@@ -39765,7 +39789,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u176001489"
+													"varname" : "u939001497"
 												}
 
 											}
@@ -40552,7 +40576,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u134001487"
+													"varname" : "u399001495"
 												}
 
 											}
@@ -41339,7 +41363,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u162001485"
+													"varname" : "u380001493"
 												}
 
 											}
@@ -42126,7 +42150,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u288001483"
+													"varname" : "u543001491"
 												}
 
 											}
@@ -42913,7 +42937,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u745001481"
+													"varname" : "u421001489"
 												}
 
 											}
@@ -43700,7 +43724,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u399001479"
+													"varname" : "u165001487"
 												}
 
 											}
@@ -44487,7 +44511,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u697001477"
+													"varname" : "u381001485"
 												}
 
 											}
@@ -45056,23 +45080,23 @@
 						"clips" : [ 							{
 								"filename" : "/Users/CS1/Desktop/Audio Files/aguagudo.wav",
 								"filekind" : "audiofile",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
+									"followglobaltempo" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"formant" : [ 1.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
 									"timestretch" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originallengthms" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"formant" : [ 1.0 ],
 									"slurtime" : [ 0.0 ],
 									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -45099,23 +45123,23 @@
 						"clips" : [ 							{
 								"filename" : "/Users/CS1/Desktop/Audio Files/agua.wav",
 								"filekind" : "audiofile",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
+									"followglobaltempo" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"formant" : [ 1.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
 									"timestretch" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originallengthms" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"formant" : [ 1.0 ],
 									"slurtime" : [ 0.0 ],
 									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -45142,23 +45166,23 @@
 						"clips" : [ 							{
 								"filename" : "/Users/CS1/Desktop/Audio Files/agua-aves.wav",
 								"filekind" : "audiofile",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
+									"followglobaltempo" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"formant" : [ 1.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
 									"timestretch" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originallengthms" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"formant" : [ 1.0 ],
 									"slurtime" : [ 0.0 ],
 									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -45185,23 +45209,23 @@
 						"clips" : [ 							{
 								"filename" : "/Users/CS1/Desktop/Audio Files/agua-noize.wav",
 								"filekind" : "audiofile",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
+									"followglobaltempo" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"formant" : [ 1.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
 									"timestretch" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originallengthms" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"formant" : [ 1.0 ],
 									"slurtime" : [ 0.0 ],
 									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -45228,23 +45252,23 @@
 						"clips" : [ 							{
 								"filename" : "/Users/CS1/Desktop/Audio Files/Q-Delicias-Agua+Aves.wav",
 								"filekind" : "audiofile",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
+									"followglobaltempo" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"formant" : [ 1.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
 									"timestretch" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originallengthms" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"formant" : [ 1.0 ],
 									"slurtime" : [ 0.0 ],
 									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -45271,23 +45295,23 @@
 						"clips" : [ 							{
 								"filename" : "/Users/CS1/Desktop/Audio Files/Q-Delicias-Agua.wav",
 								"filekind" : "audiofile",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
+									"followglobaltempo" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"formant" : [ 1.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
 									"timestretch" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originallengthms" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"formant" : [ 1.0 ],
 									"slurtime" : [ 0.0 ],
 									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -45314,23 +45338,23 @@
 						"clips" : [ 							{
 								"filename" : "/Users/CS1/Desktop/Audio Files/aves-denoizer.wav",
 								"filekind" : "audiofile",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
+									"followglobaltempo" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"formant" : [ 1.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
 									"timestretch" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originallengthms" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"formant" : [ 1.0 ],
 									"slurtime" : [ 0.0 ],
 									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -45357,23 +45381,23 @@
 						"clips" : [ 							{
 								"filename" : "/Users/CS1/Desktop/Audio Files/aves.wav",
 								"filekind" : "audiofile",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
+									"followglobaltempo" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"formant" : [ 1.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
 									"timestretch" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originallengthms" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"formant" : [ 1.0 ],
 									"slurtime" : [ 0.0 ],
 									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -45400,23 +45424,23 @@
 						"clips" : [ 							{
 								"filename" : "/Users/CS1/Desktop/Audio Files/agua-aves-denoizer.wav",
 								"filekind" : "audiofile",
-								"loop" : 0,
+								"loop" : 1,
 								"content_state" : 								{
+									"followglobaltempo" : [ 0 ],
+									"originallength" : [ 0.0, "ticks" ],
+									"formant" : [ 1.0 ],
+									"pitchshift" : [ 1.0 ],
+									"mode" : [ "basic" ],
+									"formantcorrection" : [ 0 ],
 									"originaltempo" : [ 120.0 ],
 									"timestretch" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originallengthms" : [ 0.0 ],
-									"formantcorrection" : [ 0 ],
-									"speed" : [ 1.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"basictuning" : [ 440 ],
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchshift" : [ 1.0 ],
-									"formant" : [ 1.0 ],
 									"slurtime" : [ 0.0 ],
 									"pitchcorrection" : [ 0 ],
-									"followglobaltempo" : [ 0 ]
+									"speed" : [ 1.0 ],
+									"quality" : [ "basic" ],
+									"play" : [ 0 ],
+									"basictuning" : [ 440 ]
 								}
 
 							}
@@ -46143,7 +46167,7 @@
 					"destination" : [ "obj-26", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 0.0, 6.0, 0.0, 6.0 ],
+					"midpoints" : [ 0.0, 0.0, 0.0, 6.0 ],
 					"source" : [ "", 1 ]
 				}
 

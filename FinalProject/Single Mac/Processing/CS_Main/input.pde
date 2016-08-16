@@ -37,12 +37,9 @@ void keyPressed()
     refTextEnabled = !refTextEnabled;
     println("Ref Text: " + refTextEnabled); 
     break;
-  case RETURN :
-    if (keyEvent.isMetaDown())
-    {
-      initState = false;
-      println("Calibrating... Set Appart and wait please");
-    }
+  case 'c' :
+    initState = false;
+    println("Calibrating... Set Appart and wait please");
     break;
   case ' '  :
     kinectFrame = ++kinectFrame % 4;
@@ -56,6 +53,7 @@ void keyPressed()
       if (kinectEnabled)
       {
         kinect.setTilt(deg);
+        println(deg);
       }
       break;
     case DOWN :
@@ -63,6 +61,7 @@ void keyPressed()
       if (kinectEnabled)
       {
         kinect.setTilt(deg);
+        println(deg);
       }
       break;
     case LEFT  :
