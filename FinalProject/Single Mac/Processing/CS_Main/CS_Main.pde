@@ -40,7 +40,6 @@ import org.openkinect.processing.*;
 import org.openkinect.tests.*;
 
 import de.voidplus.leapmotion.*;
-import development.*;
 
 import themidibus.*;
 
@@ -117,7 +116,7 @@ int meanLength = 50;
 int meanFactor = 5; // change later to 3 at least
 
 /////////////(Cambiar a dependiendo de la instalación)//////////////
-int deg = 0; //Ángulo Inicial de inclinación del Kinect  
+int deg = 30; //Ángulo Inicial de inclinación del Kinect  
 float accuracy = 15;
 
 int kinectSize = 307200; //Tamaño del frame en pixeles
