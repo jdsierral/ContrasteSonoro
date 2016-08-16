@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 2,
-			"revision" : 3,
+			"minor" : 0,
+			"revision" : 5,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 56.0, 1212.0, 706.0 ],
+		"rect" : [ 34.0, 79.0, 1212.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -185,8 +185,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -250,8 +250,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -411,7 +411,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u482002766"
+													"varname" : "u822001537"
 												}
 
 											}
@@ -904,8 +904,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -1474,8 +1474,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -1635,7 +1635,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u955002764"
+													"varname" : "u797001535"
 												}
 
 											}
@@ -2128,8 +2128,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -2289,7 +2289,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u470002762"
+													"varname" : "u002001533"
 												}
 
 											}
@@ -2808,8 +2808,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -3693,13 +3693,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 905.0, 184.0, 120.0, 210.0 ],
+						"rect" : [ 905.0, 207.0, 120.0, 210.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -3770,7 +3770,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u352002760"
+									"varname" : "u766001531"
 								}
 
 							}
@@ -4819,13 +4819,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 722.0, 181.0, 42.0, 326.0 ],
+						"rect" : [ 722.0, 204.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -4870,7 +4870,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u679002758"
+									"varname" : "u112001529"
 								}
 
 							}
@@ -6726,13 +6726,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 667.0, 181.0, 42.0, 326.0 ],
+						"rect" : [ 667.0, 204.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -6777,7 +6777,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u217002756"
+									"varname" : "u258001527"
 								}
 
 							}
@@ -8633,13 +8633,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 612.0, 181.0, 42.0, 326.0 ],
+						"rect" : [ 612.0, 204.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -8684,7 +8684,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u314002754"
+									"varname" : "u001001525"
 								}
 
 							}
@@ -10540,13 +10540,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 557.0, 181.0, 42.0, 326.0 ],
+						"rect" : [ 557.0, 204.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -10591,7 +10591,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u135002752"
+									"varname" : "u909001523"
 								}
 
 							}
@@ -12447,13 +12447,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 502.0, 181.0, 42.0, 326.0 ],
+						"rect" : [ 502.0, 204.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -12498,7 +12498,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u785002750"
+									"varname" : "u166001521"
 								}
 
 							}
@@ -14354,13 +14354,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 447.0, 181.0, 42.0, 326.0 ],
+						"rect" : [ 447.0, 204.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -14405,7 +14405,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u934002748"
+									"varname" : "u861001519"
 								}
 
 							}
@@ -16259,13 +16259,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 392.0, 181.0, 42.0, 326.0 ],
+						"rect" : [ 392.0, 204.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -16310,7 +16310,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u801002746"
+									"varname" : "u929001517"
 								}
 
 							}
@@ -18166,13 +18166,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 337.0, 181.0, 42.0, 326.0 ],
+						"rect" : [ 337.0, 204.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -18217,7 +18217,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u074002744"
+									"varname" : "u401001515"
 								}
 
 							}
@@ -20073,13 +20073,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 282.0, 181.0, 42.0, 326.0 ],
+						"rect" : [ 282.0, 204.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -20124,7 +20124,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u491002742"
+									"varname" : "u150001513"
 								}
 
 							}
@@ -21980,13 +21980,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 227.0, 181.0, 42.0, 326.0 ],
+						"rect" : [ 227.0, 204.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -22031,7 +22031,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u154002740"
+									"varname" : "u034001511"
 								}
 
 							}
@@ -23898,20 +23898,22 @@
 				"box" : 				{
 					"active" : 					{
 						"resources" : 0,
-						"resources::bpatcher[1]" : 0,
+						"resources::bpatcher[1]::bpatcher[1]" : 0,
 						"resources::bpatcher[1]::quadMonoPan" : 0,
+						"resources::bpatcher[1]::u180001497" : 0,
 						"resources::bpatcher[1]::level" : 0,
 						"resources::bpatcher[1]::on" : 0,
 						"resources::bpatcher[1]::pos" : 0,
-						"resources::paramChanger" : 0,
 						"resources::paramChanger::paramChanger" : 0,
+						"resources::paramChanger::u734001499" : 0,
 						"resources::paramChanger::hiValScale" : 0,
 						"resources::paramChanger::lowValScale" : 0,
 						"resources::paramChanger::numParam" : 0,
 						"resources::paramChanger::typeParam" : 0,
 						"resources::paramChanger::valParam" : 0,
-						"resources::fader[1]" : 0,
+						"resources::fader[1]::fader[1]" : 0,
 						"resources::fader[1]::quadStereoPan" : 0,
+						"resources::fader[1]::u658001501" : 0,
 						"resources::fader[1]::ang" : 0,
 						"resources::fader[1]::level" : 0,
 						"resources::fader[1]::on" : 0,
@@ -23970,13 +23972,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 221.0, 509.0, 458.0, 345.0 ],
+						"rect" : [ 221.0, 532.0, 458.0, 345.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -24037,13 +24039,13 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 530.0, 512.0, 151.0, 344.0 ],
+										"rect" : [ 530.0, 535.0, 151.0, 344.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -24501,13 +24503,13 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 377.0, 512.0, 151.0, 344.0 ],
+										"rect" : [ 377.0, 535.0, 151.0, 344.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -24933,8 +24935,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -25102,13 +25104,13 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 224.0, 512.0, 151.0, 105.0 ],
+										"rect" : [ 224.0, 535.0, 151.0, 105.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -25424,8 +25426,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -25489,8 +25491,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -25650,7 +25652,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u118002738"
+													"varname" : "u779001509"
 												}
 
 											}
@@ -26143,8 +26145,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -26713,8 +26715,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -26874,7 +26876,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u288002736"
+													"varname" : "u362001507"
 												}
 
 											}
@@ -27367,8 +27369,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -27528,7 +27530,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u166002734"
+													"varname" : "u006001505"
 												}
 
 											}
@@ -28047,8 +28049,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -28932,13 +28934,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 784.0, 184.0, 120.0, 210.0 ],
+						"rect" : [ 784.0, 207.0, 120.0, 210.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -29009,7 +29011,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u335002732"
+									"varname" : "u442001503"
 								}
 
 							}
@@ -30020,8 +30022,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -30072,8 +30074,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -30123,7 +30125,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u603002730"
+													"varname" : "u658001501"
 												}
 
 											}
@@ -31977,8 +31979,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -32138,7 +32140,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u662002728"
+													"varname" : "u734001499"
 												}
 
 											}
@@ -32679,8 +32681,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -32754,7 +32756,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u959002726"
+													"varname" : "u180001497"
 												}
 
 											}
@@ -33582,8 +33584,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -34520,8 +34522,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -36151,8 +36153,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -36913,25 +36915,25 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "OS X Mavericks:/Users/audio/Desktop/Magna/Magna French Horn 01.wav",
+								"filename" : "/Users/CS1/Desktop/Audio Files/Q-MZL.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ],
+									"quality" : [ "basic" ],
+									"originallengthms" : [ 0.0 ],
 									"formantcorrection" : [ 0 ],
 									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
 									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ]
+									"mode" : [ "basic" ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"formant" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ]
 								}
 
 							}
@@ -36963,8 +36965,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -37189,8 +37191,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -37241,8 +37243,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -37402,7 +37404,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u519002724"
+													"varname" : "u956001495"
 												}
 
 											}
@@ -37976,8 +37978,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -38028,8 +38030,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -38189,7 +38191,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u471002722"
+													"varname" : "u868001493"
 												}
 
 											}
@@ -38763,8 +38765,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -38815,8 +38817,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -38976,7 +38978,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u869002720"
+													"varname" : "u371001491"
 												}
 
 											}
@@ -39550,8 +39552,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -39602,8 +39604,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -39763,7 +39765,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u312002718"
+													"varname" : "u176001489"
 												}
 
 											}
@@ -40337,8 +40339,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -40389,8 +40391,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -40550,7 +40552,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u984002716"
+													"varname" : "u134001487"
 												}
 
 											}
@@ -41124,8 +41126,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -41176,8 +41178,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -41337,7 +41339,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u940002714"
+													"varname" : "u162001485"
 												}
 
 											}
@@ -41911,8 +41913,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -41963,8 +41965,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -42124,7 +42126,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u412002712"
+													"varname" : "u288001483"
 												}
 
 											}
@@ -42698,8 +42700,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -42750,8 +42752,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -42911,7 +42913,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u154002710"
+													"varname" : "u745001481"
 												}
 
 											}
@@ -43485,8 +43487,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -43537,8 +43539,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -43698,7 +43700,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u702002708"
+													"varname" : "u399001479"
 												}
 
 											}
@@ -44272,8 +44274,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 2,
-							"revision" : 3,
+							"minor" : 0,
+							"revision" : 5,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -44324,8 +44326,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 2,
-											"revision" : 3,
+											"minor" : 0,
+											"revision" : 5,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -44485,7 +44487,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u846002706"
+													"varname" : "u697001477"
 												}
 
 											}
@@ -45052,25 +45054,25 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "/Users/JuanS/Music/Logic/The Game of Love/Audio Files/TT1#04.aif",
+								"filename" : "/Users/CS1/Desktop/Audio Files/aguagudo.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ],
+									"quality" : [ "basic" ],
+									"originallengthms" : [ 0.0 ],
 									"formantcorrection" : [ 0 ],
 									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
 									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ]
+									"mode" : [ "basic" ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"formant" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ]
 								}
 
 							}
@@ -45095,25 +45097,25 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "/Users/JuanS/Music/Logic/The Game of Love/Audio Files/HH#04.aif",
+								"filename" : "/Users/CS1/Desktop/Audio Files/agua.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ],
+									"quality" : [ "basic" ],
+									"originallengthms" : [ 0.0 ],
 									"formantcorrection" : [ 0 ],
 									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
 									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ]
+									"mode" : [ "basic" ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"formant" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ]
 								}
 
 							}
@@ -45138,25 +45140,25 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "/Users/JuanS/Music/Logic/The Game of Love/Audio Files/SnrUp#04.aif",
+								"filename" : "/Users/CS1/Desktop/Audio Files/agua-aves.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ],
+									"quality" : [ "basic" ],
+									"originallengthms" : [ 0.0 ],
 									"formantcorrection" : [ 0 ],
 									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
 									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ]
+									"mode" : [ "basic" ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"formant" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ]
 								}
 
 							}
@@ -45181,25 +45183,25 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "/Users/JuanS/Music/Logic/The Game of Love/Audio Files/SnrDwn#04.aif",
+								"filename" : "/Users/CS1/Desktop/Audio Files/agua-noize.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ],
+									"quality" : [ "basic" ],
+									"originallengthms" : [ 0.0 ],
 									"formantcorrection" : [ 0 ],
 									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
 									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ]
+									"mode" : [ "basic" ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"formant" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ]
 								}
 
 							}
@@ -45224,25 +45226,25 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "OS X Mavericks:/Users/audio/Desktop/Magna/Magna Hi Strings 01.wav",
+								"filename" : "/Users/CS1/Desktop/Audio Files/Q-Delicias-Agua+Aves.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ],
+									"quality" : [ "basic" ],
+									"originallengthms" : [ 0.0 ],
 									"formantcorrection" : [ 0 ],
 									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
 									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ]
+									"mode" : [ "basic" ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"formant" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ]
 								}
 
 							}
@@ -45267,25 +45269,25 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "/Users/JuanS/Music/Logic/The Game of Love/Audio Files/OHR#04.aif",
+								"filename" : "/Users/CS1/Desktop/Audio Files/Q-Delicias-Agua.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ],
+									"quality" : [ "basic" ],
+									"originallengthms" : [ 0.0 ],
 									"formantcorrection" : [ 0 ],
 									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
 									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ]
+									"mode" : [ "basic" ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"formant" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ]
 								}
 
 							}
@@ -45310,25 +45312,25 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "/Users/JuanS/Music/Logic/The Game of Love/Audio Files/TT2#04.aif",
+								"filename" : "/Users/CS1/Desktop/Audio Files/aves-denoizer.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ],
+									"quality" : [ "basic" ],
+									"originallengthms" : [ 0.0 ],
 									"formantcorrection" : [ 0 ],
 									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
 									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ]
+									"mode" : [ "basic" ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"formant" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ]
 								}
 
 							}
@@ -45353,25 +45355,25 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "/Users/JuanS/Music/Logic/The Game of Love/Audio Files/OHL#04.aif",
+								"filename" : "/Users/CS1/Desktop/Audio Files/aves.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ],
+									"quality" : [ "basic" ],
+									"originallengthms" : [ 0.0 ],
 									"formantcorrection" : [ 0 ],
 									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
 									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ]
+									"mode" : [ "basic" ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"formant" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ]
 								}
 
 							}
@@ -45396,25 +45398,25 @@
 				"box" : 				{
 					"data" : 					{
 						"clips" : [ 							{
-								"filename" : "/Users/JuanS/Music/Logic/The Game of Love/Audio Files/17 The Game of Love (feat. Michelle Branch) [Main_Radio Mix].aif",
+								"filename" : "/Users/CS1/Desktop/Audio Files/agua-aves-denoizer.wav",
 								"filekind" : "audiofile",
-								"loop" : 1,
+								"loop" : 0,
 								"content_state" : 								{
-									"mode" : [ "basic" ],
-									"play" : [ 0 ],
-									"pitchcorrection" : [ 0 ],
-									"quality" : [ "basic" ],
 									"originaltempo" : [ 120.0 ],
-									"originallengthms" : [ 0.0 ],
-									"originallength" : [ 0.0, "ticks" ],
-									"formant" : [ 1.0 ],
-									"followglobaltempo" : [ 0 ],
 									"timestretch" : [ 0 ],
+									"quality" : [ "basic" ],
+									"originallengthms" : [ 0.0 ],
 									"formantcorrection" : [ 0 ],
 									"speed" : [ 1.0 ],
-									"pitchshift" : [ 1.0 ],
+									"originallength" : [ 0.0, "ticks" ],
 									"basictuning" : [ 440 ],
-									"slurtime" : [ 0.0 ]
+									"mode" : [ "basic" ],
+									"play" : [ 0 ],
+									"pitchshift" : [ 1.0 ],
+									"formant" : [ 1.0 ],
+									"slurtime" : [ 0.0 ],
+									"pitchcorrection" : [ 0 ],
+									"followglobaltempo" : [ 0 ]
 								}
 
 							}
@@ -47018,57 +47020,69 @@
 			}
  ],
 		"dependency_cache" : [ 			{
-				"name" : "17 The Game of Love (feat. Michelle Branch) [Main_Radio Mix].aif",
-				"bootpath" : "~/Music/Logic/The Game of Love/Audio Files",
-				"type" : "AIFF",
+				"name" : "agua-aves-denoizer.wav",
+				"bootpath" : "~/Desktop/Audio Files",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "OHL#04.aif",
-				"bootpath" : "~/Music/Logic/The Game of Love/Audio Files",
-				"type" : "AIFF",
+				"name" : "aves.wav",
+				"bootpath" : "~/Desktop/Audio Files",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "TT2#04.aif",
-				"bootpath" : "~/Music/Logic/The Game of Love/Audio Files",
-				"type" : "AIFF",
+				"name" : "aves-denoizer.wav",
+				"bootpath" : "~/Desktop/Audio Files",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "OHR#04.aif",
-				"bootpath" : "~/Music/Logic/The Game of Love/Audio Files",
-				"type" : "AIFF",
+				"name" : "Q-Delicias-Agua.wav",
+				"bootpath" : "~/Desktop/Audio Files",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "SnrDwn#04.aif",
-				"bootpath" : "~/Music/Logic/The Game of Love/Audio Files",
-				"type" : "AIFF",
+				"name" : "Q-Delicias-Agua+Aves.wav",
+				"bootpath" : "~/Desktop/Audio Files",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "SnrUp#04.aif",
-				"bootpath" : "~/Music/Logic/The Game of Love/Audio Files",
-				"type" : "AIFF",
+				"name" : "agua-noize.wav",
+				"bootpath" : "~/Desktop/Audio Files",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "HH#04.aif",
-				"bootpath" : "~/Music/Logic/The Game of Love/Audio Files",
-				"type" : "AIFF",
+				"name" : "agua-aves.wav",
+				"bootpath" : "~/Desktop/Audio Files",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "TT1#04.aif",
-				"bootpath" : "~/Music/Logic/The Game of Love/Audio Files",
-				"type" : "AIFF",
+				"name" : "agua.wav",
+				"bootpath" : "~/Desktop/Audio Files",
+				"type" : "WAVE",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "aguagudo.wav",
+				"bootpath" : "~/Desktop/Audio Files",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "freqScale.maxpat",
-				"bootpath" : "~/Developer/Contraste Sonoro/FinalProject/Single Mac/MAX",
+				"bootpath" : "~/Desktop/ContrasteSonoro/FinalProject/Single Mac/MAX",
 				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "Q-MZL.wav",
+				"bootpath" : "~/Desktop/Audio Files",
+				"type" : "WAVE",
 				"implicit" : 1
 			}
 , 			{
@@ -47076,7 +47090,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"autosave" : 0
+		"embedsnapshot" : 0
 	}
 
 }
