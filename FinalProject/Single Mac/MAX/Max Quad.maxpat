@@ -3,13 +3,13 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 7,
-			"minor" : 0,
-			"revision" : 5,
+			"minor" : 2,
+			"revision" : 3,
 			"architecture" : "x86",
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 34.0, 79.0, 1446.0, 938.0 ],
+		"rect" : [ 34.0, 56.0, 1212.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -87,7 +87,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u564005691"
+					"varname" : "u440005686"
 				}
 
 			}
@@ -185,8 +185,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -237,8 +237,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -398,7 +398,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u879005688"
+													"varname" : "u953005684"
 												}
 
 											}
@@ -891,8 +891,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -1797,8 +1797,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -1971,7 +1971,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u229005686"
+													"varname" : "u018005682"
 												}
 
 											}
@@ -2462,8 +2462,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -2623,7 +2623,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u230005684"
+													"varname" : "u114005680"
 												}
 
 											}
@@ -3116,8 +3116,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -4100,13 +4100,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 388.0, 701.0, 120.0, 210.0 ],
+						"rect" : [ 905.0, 92.0, 120.0, 210.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -4177,7 +4177,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u198005682"
+									"varname" : "u284005678"
 								}
 
 							}
@@ -5226,13 +5226,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 1024.0, 176.0, 42.0, 326.0 ],
+						"rect" : [ 722.0, 89.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -5277,7 +5277,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u291005680"
+									"varname" : "u487005676"
 								}
 
 							}
@@ -7133,13 +7133,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 937.0, 176.0, 42.0, 326.0 ],
+						"rect" : [ 667.0, 89.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -7184,7 +7184,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u970005678"
+									"varname" : "u942005674"
 								}
 
 							}
@@ -9040,13 +9040,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 851.0, 176.0, 42.0, 326.0 ],
+						"rect" : [ 612.0, 89.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -9091,7 +9091,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u632005676"
+									"varname" : "u915005672"
 								}
 
 							}
@@ -10947,13 +10947,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 764.0, 176.0, 42.0, 326.0 ],
+						"rect" : [ 557.0, 89.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -11037,7 +11037,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u312005674"
+									"varname" : "u241005670"
 								}
 
 							}
@@ -12920,13 +12920,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 677.0, 176.0, 42.0, 326.0 ],
+						"rect" : [ 502.0, 89.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -13002,15 +13002,15 @@
 									"patching_rect" : [ 0.0, -68.0, 58.0, 22.0 ],
 									"restore" : 									{
 										"ang" : [ 91 ],
-										"level" : [ 100.0 ],
+										"level" : [ 40.0 ],
 										"on" : [ 1 ],
-										"pos" : [ 0, 27 ],
+										"pos" : [ 76, 0 ],
 										"rad" : [ 49 ]
 									}
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u970005672"
+									"varname" : "u395005668"
 								}
 
 							}
@@ -15003,13 +15003,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 591.0, 176.0, 42.0, 326.0 ],
+						"rect" : [ 447.0, 89.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -15054,7 +15054,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u216005670"
+									"varname" : "u306005666"
 								}
 
 							}
@@ -16908,13 +16908,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 504.0, 176.0, 42.0, 326.0 ],
+						"rect" : [ 392.0, 89.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -16959,7 +16959,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u479005668"
+									"varname" : "u695005664"
 								}
 
 							}
@@ -18815,13 +18815,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 417.0, 176.0, 42.0, 326.0 ],
+						"rect" : [ 337.0, 89.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -18885,13 +18885,13 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 1207.0, 740.0, 640.0, 480.0 ],
+										"rect" : [ 606.0, 740.0, 640.0, 480.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -19195,7 +19195,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u439005666"
+									"varname" : "u945005662"
 								}
 
 							}
@@ -21078,13 +21078,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 331.0, 176.0, 42.0, 326.0 ],
+						"rect" : [ 282.0, 89.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -21129,7 +21129,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u692005664"
+									"varname" : "u900005660"
 								}
 
 							}
@@ -22985,13 +22985,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 244.0, 176.0, 42.0, 326.0 ],
+						"rect" : [ 227.0, 89.0, 42.0, 326.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -23036,7 +23036,7 @@
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u425005662"
+									"varname" : "u290005658"
 								}
 
 							}
@@ -24903,22 +24903,20 @@
 				"box" : 				{
 					"active" : 					{
 						"resources" : 0,
-						"resources::bpatcher[1]::bpatcher[1]" : 0,
+						"resources::bpatcher[1]" : 0,
 						"resources::bpatcher[1]::quadMonoPan" : 0,
-						"resources::bpatcher[1]::u929005650" : 0,
 						"resources::bpatcher[1]::level" : 0,
 						"resources::bpatcher[1]::on" : 0,
 						"resources::bpatcher[1]::pos" : 0,
+						"resources::paramChanger" : 0,
 						"resources::paramChanger::paramChanger" : 0,
-						"resources::paramChanger::u594005652" : 0,
 						"resources::paramChanger::hiValScale" : 0,
 						"resources::paramChanger::lowValScale" : 0,
 						"resources::paramChanger::numParam" : 0,
 						"resources::paramChanger::typeParam" : 0,
 						"resources::paramChanger::valParam" : 0,
-						"resources::fader[1]::fader[1]" : 0,
+						"resources::fader[1]" : 0,
 						"resources::fader[1]::quadStereoPan" : 0,
-						"resources::fader[1]::u153005654" : 0,
 						"resources::fader[1]::ang" : 0,
 						"resources::fader[1]::level" : 0,
 						"resources::fader[1]::on" : 0,
@@ -24977,13 +24975,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 608.0, 595.0, 458.0, 345.0 ],
+						"rect" : [ 221.0, 417.0, 458.0, 345.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -25017,12 +25015,12 @@
 									"maxclass" : "comment",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 15.0, 236.0, 160.0, 181.0 ],
+									"patching_rect" : [ 15.0, 236.0, 162.0, 181.0 ],
 									"presentation" : 1,
 									"presentation_linecount" : 13,
-									"presentation_rect" : [ 3.0, 110.0, 151.0, 181.0 ],
+									"presentation_rect" : [ 3.0, 110.0, 167.0, 181.0 ],
 									"style" : "",
-									"text" : "Nombres de las variables de cada parâ€šÃ Ã¶Â¬âˆžmetro\n\nkinect1.x:\nkinect1.x: \nkinect1.x: \nleapL1.x: \nleapL1.y: \nleapL1.z: \nleapL1.a: \nleapL1.b: \nleapL1.c: \nleapL1.g: "
+									"text" : "Nombres de las variables de cada parametro\n\nkinect1.x:\nkinect1.x: \nkinect1.x: \nleap1L.x: \nleap1L.y: \nleap1L.z: \nleap1L.a: \nleap1L.b: \nleap1L.c: \nleap1L.g: "
 								}
 
 							}
@@ -25044,13 +25042,13 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 917.0, 598.0, 151.0, 344.0 ],
+										"rect" : [ 530.0, 420.0, 151.0, 344.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -25508,13 +25506,13 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 764.0, 598.0, 151.0, 344.0 ],
+										"rect" : [ 377.0, 420.0, 151.0, 344.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -25940,8 +25938,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -26109,13 +26107,13 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 611.0, 598.0, 151.0, 105.0 ],
+										"rect" : [ 224.0, 420.0, 151.0, 105.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -26454,8 +26452,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -26506,8 +26504,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -27410,8 +27408,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -27571,7 +27569,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u483005660"
+													"varname" : "u494005656"
 												}
 
 											}
@@ -28064,8 +28062,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -28225,7 +28223,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u997005658"
+													"varname" : "u082005654"
 												}
 
 											}
@@ -28718,8 +28716,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -29564,13 +29562,13 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 244.0, 701.0, 120.0, 210.0 ],
+						"rect" : [ 784.0, 92.0, 120.0, 210.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -29624,24 +29622,24 @@
 									"patching_rect" : [ 500.0, 89.0, 58.0, 22.0 ],
 									"restore" : 									{
 										"mainMaster" : [ 114 ],
-										"mainMasterOn" : [ 0 ],
-										"subMaster1" : [ 0 ],
+										"mainMasterOn" : [ 1 ],
+										"subMaster1" : [ 113 ],
 										"subMaster1On" : [ 1 ],
 										"subMaster1Trim" : [ 3.0 ],
-										"subMaster2" : [ 0 ],
+										"subMaster2" : [ 113 ],
 										"subMaster2On" : [ 1 ],
 										"subMaster2Trim" : [ 3.0 ],
-										"subMaster3" : [ 0 ],
+										"subMaster3" : [ 113 ],
 										"subMaster3On" : [ 1 ],
 										"subMaster3Trim" : [ 3.0 ],
-										"subMaster4" : [ 0 ],
+										"subMaster4" : [ 113 ],
 										"subMaster4On" : [ 1 ],
 										"subMaster4Trim" : [ 3.0 ]
 									}
 ,
 									"style" : "",
 									"text" : "autopattr",
-									"varname" : "u342005656"
+									"varname" : "u692005652"
 								}
 
 							}
@@ -30652,8 +30650,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -30704,8 +30702,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -30755,7 +30753,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u153005654"
+													"varname" : "u078005650"
 												}
 
 											}
@@ -32609,8 +32607,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -32770,7 +32768,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u594005652"
+													"varname" : "u925005648"
 												}
 
 											}
@@ -33311,8 +33309,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -33386,7 +33384,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u929005650"
+													"varname" : "u253005646"
 												}
 
 											}
@@ -34214,8 +34212,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -35152,8 +35150,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -36783,8 +36781,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -37549,21 +37547,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formantcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"pitchcorrection" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
 									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
 									"followglobaltempo" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
+									"formant" : [ 1.0 ],
 									"speed" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"originaltempo" : [ 120.0 ]
 								}
 
 							}
@@ -37595,8 +37593,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -37821,8 +37819,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -37873,8 +37871,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -38034,7 +38032,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u282005648"
+													"varname" : "u805005644"
 												}
 
 											}
@@ -38608,8 +38606,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -38660,8 +38658,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -38821,7 +38819,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u381005646"
+													"varname" : "u411005642"
 												}
 
 											}
@@ -39395,8 +39393,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -39430,6 +39428,7 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"autosave" : 1,
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -39443,20 +39442,23 @@
 									"presentation_rect" : [ 0.0, 0.0, 300.0, 100.0 ],
 									"save" : [ "#N", "vst~", "loaduniqueid", 0, "AUHipass.auinfo", ";" ],
 									"saved_object_attributes" : 									{
+										"annotation_name" : "",
 										"parameter_enable" : 0
 									}
 ,
 									"snapshot" : 									{
 										"filetype" : "C74Snapshot",
-										"version" : 1,
-										"name" : "AUHipass.auinfo",
-										"origin" : "AUHipass.auinfo",
-										"type" : "AudioUnit",
-										"subtype" : "AudioEffect",
+										"version" : 2,
+										"minorversion" : 0,
+										"name" : "snapshotlist",
+										"origin" : "vst~",
+										"type" : "list",
+										"subtype" : "Undefined",
+										"embed" : 1,
 										"snapshot" : 										{
 											"pluginname" : "AUHipass.auinfo",
 											"plugindisplayname" : "AUHipass",
-											"pluginsavedname" : "AUHipass.auinfo",
+											"pluginsavedname" : "AUHipass",
 											"pluginsaveduniqueid" : 0,
 											"version" : 1,
 											"isbank" : 0,
@@ -39465,11 +39467,48 @@
 											"slidervisibility" : [ 1, 1 ],
 											"blob" : "167.hAGaoMGcv.i0AHv.DTfAGfPBJr.CTQWdvU1UyUmXzkGbkwUag4VclE1XzUmbkIGUjEFcgQkag0VYWYWYxMWZu4lDgUmY3IAZvE1bRDFbvw1SPvA..............H......E0zGdB...D......XUkazkFcrUFYP..BUngHuPSNAYzRP8Fd........AD..........M....................nG"
 										}
+,
+										"snapshotlist" : 										{
+											"current_snapshot" : 0,
+											"entries" : [ 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "AUHipass.auinfo",
+													"origin" : "AUHipass.auinfo",
+													"type" : "AudioUnit",
+													"subtype" : "AudioEffect",
+													"embed" : 0,
+													"snapshot" : 													{
+														"pluginname" : "AUHipass.auinfo",
+														"plugindisplayname" : "AUHipass",
+														"pluginsavedname" : "AUHipass",
+														"pluginsaveduniqueid" : 0,
+														"version" : 1,
+														"isbank" : 0,
+														"isbase64" : 1,
+														"sliderorder" : [ 0, 1 ],
+														"slidervisibility" : [ 1, 1 ],
+														"blob" : "167.hAGaoMGcv.i0AHv.DTfAGfPBJr.CTQWdvU1UyUmXzkGbkwUag4VclE1XzUmbkIGUjEFcgQkag0VYWYWYxMWZu4lDgUmY3IAZvE1bRDFbvw1SPvA..............H......E0zGdB...D......XUkazkFcrUFYP..BUngHuPSNAYzRP8Fd........AD..........M....................nG"
+													}
+,
+													"fileref" : 													{
+														"name" : "AUHipass.auinfo",
+														"filename" : "AUHipass.auinfo.maxsnap",
+														"filepath" : "~/Documents/Max 7/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "d47812ad54701f8282bf60ea6cd90eac"
+													}
+
+												}
+ ]
+										}
 
 									}
 ,
 									"style" : "",
 									"text" : "vst~ AUHipass.auinfo",
+									"varname" : "vst~",
 									"viewvisibility" : 1
 								}
 
@@ -39493,8 +39532,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -39654,7 +39693,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u168005644"
+													"varname" : "u084005640"
 												}
 
 											}
@@ -40246,8 +40285,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -40281,6 +40320,7 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"autosave" : 1,
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -40294,33 +40334,73 @@
 									"presentation_rect" : [ 0.0, 0.0, 300.0, 100.0 ],
 									"save" : [ "#N", "vst~", "loaduniqueid", 0, "AUFilter.auinfo", ";" ],
 									"saved_object_attributes" : 									{
+										"annotation_name" : "",
 										"parameter_enable" : 0
 									}
 ,
 									"snapshot" : 									{
 										"filetype" : "C74Snapshot",
-										"version" : 1,
-										"name" : "AUFilter.auinfo",
-										"origin" : "AUFilter.auinfo",
-										"type" : "AudioUnit",
-										"subtype" : "AudioEffect",
+										"version" : 2,
+										"minorversion" : 0,
+										"name" : "snapshotlist",
+										"origin" : "vst~",
+										"type" : "list",
+										"subtype" : "Undefined",
+										"embed" : 1,
 										"snapshot" : 										{
 											"pluginname" : "AUFilter.auinfo",
 											"plugindisplayname" : "AUFilter",
-											"pluginsavedname" : "AUFilter.auinfo",
+											"pluginsavedname" : "AUFilter",
 											"pluginsaveduniqueid" : 0,
 											"version" : 1,
 											"isbank" : 0,
 											"isbase64" : 1,
 											"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
 											"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-											"blob" : "289.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3vVFIWYwUWYtMVdOsDUzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXWYWYxMWZu41UyUmXzkGbkAQ.RDVclgmDgAGbrgUUtQWZzwVYj8DDDB..............O.....vO.B......ATTSajE...f.+xLGvB...L.Qb.D.....D.........PA.A.......XPQb.D.....G..........B.A.......jPQbBD.....J.........vB.A.......v..........MXDG.A....fC......A.RXVZrQGBWLBJ0nyOG8TTVsEYq2N.......P.A.........vC....................xC"
+											"blob" : "289.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3vVFIWYwUWYtMVdOsDUzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXWYWYxMWZu41UyUmXzkGbkAQ.RDVclgmDgAGbrgUUtQWZzwVYj8DDDB..............O.....vO.B......ATTSajE...f.+xLGvB...L.Qb.D.....D.........PA.A.......XPQb.D.....G..........B.A.......jPQbBD.....J.........vB.A.......v..........MXDG.A....fC......A.RXVZrQGBWLBJ0nyOG8TTVsEYq2N.......P.A.........vC....................xC"
+										}
+,
+										"snapshotlist" : 										{
+											"current_snapshot" : 0,
+											"entries" : [ 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "AUFilter.auinfo",
+													"origin" : "AUFilter.auinfo",
+													"type" : "AudioUnit",
+													"subtype" : "AudioEffect",
+													"embed" : 0,
+													"snapshot" : 													{
+														"pluginname" : "AUFilter.auinfo",
+														"plugindisplayname" : "AUFilter",
+														"pluginsavedname" : "AUFilter",
+														"pluginsaveduniqueid" : 0,
+														"version" : 1,
+														"isbank" : 0,
+														"isbase64" : 1,
+														"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
+														"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+														"blob" : "289.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3vVFIWYwUWYtMVdOsDUzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXWYWYxMWZu41UyUmXzkGbkAQ.RDVclgmDgAGbrgUUtQWZzwVYj8DDDB..............O.....vO.B......ATTSajE...f.+xLGvB...L.Qb.D.....D.........PA.A.......XPQb.D.....G..........B.A.......jPQbBD.....J.........vB.A.......v..........MXDG.A....fC......A.RXVZrQGBWLBJ0nyOG8TTVsEYq2N.......P.A.........vC....................xC"
+													}
+,
+													"fileref" : 													{
+														"name" : "AUFilter.auinfo",
+														"filename" : "AUFilter.auinfo.maxsnap",
+														"filepath" : "~/Documents/Max 7/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "42cb6beaa39c5cac50f6df63c0f89748"
+													}
+
+												}
+ ]
 										}
 
 									}
 ,
 									"style" : "",
 									"text" : "vst~ AUFilter.auinfo",
+									"varname" : "vst~",
 									"viewvisibility" : 1
 								}
 
@@ -40344,8 +40424,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -40505,7 +40585,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u782005642"
+													"varname" : "u770005638"
 												}
 
 											}
@@ -41097,8 +41177,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -41132,6 +41212,7 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"autosave" : 1,
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -41145,33 +41226,73 @@
 									"presentation_rect" : [ 0.0, 0.0, 300.0, 100.0 ],
 									"save" : [ "#N", "vst~", "loaduniqueid", 0, "AUHipass.auinfo", ";" ],
 									"saved_object_attributes" : 									{
+										"annotation_name" : "",
 										"parameter_enable" : 0
 									}
 ,
 									"snapshot" : 									{
 										"filetype" : "C74Snapshot",
-										"version" : 1,
-										"name" : "AUHipass.auinfo",
-										"origin" : "AUHipass.auinfo",
-										"type" : "AudioUnit",
-										"subtype" : "AudioEffect",
+										"version" : 2,
+										"minorversion" : 0,
+										"name" : "snapshotlist",
+										"origin" : "vst~",
+										"type" : "list",
+										"subtype" : "Undefined",
+										"embed" : 1,
 										"snapshot" : 										{
 											"pluginname" : "AUHipass.auinfo",
 											"plugindisplayname" : "AUHipass",
-											"pluginsavedname" : "AUHipass.auinfo",
+											"pluginsavedname" : "AUHipass",
 											"pluginsaveduniqueid" : 0,
 											"version" : 1,
 											"isbank" : 0,
 											"isbase64" : 1,
 											"sliderorder" : [ 0, 1 ],
 											"slidervisibility" : [ 1, 1 ],
-											"blob" : "167.hAGaoMGcv.i0AHv.DTfAGfPBJr.CTQWdvU1UyUmXzkGbkwUag4VclE1XzUmbkIGUjEFcgQkag0VYWYWYxMWZu4lDgUmY3IAZvE1bRDFbvw1SPvA..............H......Cgb5aB...D......XUkazkFcrUFYP..BUngHuPSNAYzRP8Fd........AD..........M....................nG"
+											"blob" : "167.hAGaoMGcv.i0AHv.DTfAGfPBJr.CTQWdvU1UyUmXzkGbkwUag4VclE1XzUmbkIGUjEFcgQkag0VYWYWYxMWZu4lDgUmY3IAZvE1bRDFbvw1SPvA..............H......Cgb5aB...D......XUkazkFcrUFYP..BUngHuPSNAYzRP8Fd........AD..........M....................nG£¡«ª2é"
+										}
+,
+										"snapshotlist" : 										{
+											"current_snapshot" : 0,
+											"entries" : [ 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "AUHipass.auinfo",
+													"origin" : "AUHipass.auinfo",
+													"type" : "AudioUnit",
+													"subtype" : "AudioEffect",
+													"embed" : 0,
+													"snapshot" : 													{
+														"pluginname" : "AUHipass.auinfo",
+														"plugindisplayname" : "AUHipass",
+														"pluginsavedname" : "AUHipass",
+														"pluginsaveduniqueid" : 0,
+														"version" : 1,
+														"isbank" : 0,
+														"isbase64" : 1,
+														"sliderorder" : [ 0, 1 ],
+														"slidervisibility" : [ 1, 1 ],
+														"blob" : "167.hAGaoMGcv.i0AHv.DTfAGfPBJr.CTQWdvU1UyUmXzkGbkwUag4VclE1XzUmbkIGUjEFcgQkag0VYWYWYxMWZu4lDgUmY3IAZvE1bRDFbvw1SPvA..............H......Cgb5aB...D......XUkazkFcrUFYP..BUngHuPSNAYzRP8Fd........AD..........M....................nG£¡«ª2é"
+													}
+,
+													"fileref" : 													{
+														"name" : "AUHipass.auinfo",
+														"filename" : "AUHipass.auinfo_20160816.maxsnap",
+														"filepath" : "~/Documents/Max 7/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "6970eb404886e1a67c8e51629d66c4b3"
+													}
+
+												}
+ ]
 										}
 
 									}
 ,
 									"style" : "",
 									"text" : "vst~ AUHipass.auinfo",
+									"varname" : "vst~",
 									"viewvisibility" : 1
 								}
 
@@ -41195,8 +41316,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -41356,7 +41477,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u317005640"
+													"varname" : "u711005636"
 												}
 
 											}
@@ -41948,8 +42069,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -41983,6 +42104,7 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"autosave" : 1,
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -41996,20 +42118,23 @@
 									"presentation_rect" : [ 0.0, 0.0, 300.0, 100.0 ],
 									"save" : [ "#N", "vst~", "loaduniqueid", 0, "AUHipass.auinfo", ";" ],
 									"saved_object_attributes" : 									{
+										"annotation_name" : "",
 										"parameter_enable" : 0
 									}
 ,
 									"snapshot" : 									{
 										"filetype" : "C74Snapshot",
-										"version" : 1,
-										"name" : "AUHipass.auinfo",
-										"origin" : "AUHipass.auinfo",
-										"type" : "AudioUnit",
-										"subtype" : "AudioEffect",
+										"version" : 2,
+										"minorversion" : 0,
+										"name" : "snapshotlist",
+										"origin" : "vst~",
+										"type" : "list",
+										"subtype" : "Undefined",
+										"embed" : 1,
 										"snapshot" : 										{
 											"pluginname" : "AUHipass.auinfo",
 											"plugindisplayname" : "AUHipass",
-											"pluginsavedname" : "AUHipass.auinfo",
+											"pluginsavedname" : "AUHipass",
 											"pluginsaveduniqueid" : 0,
 											"version" : 1,
 											"isbank" : 0,
@@ -42018,11 +42143,48 @@
 											"slidervisibility" : [ 1, 1 ],
 											"blob" : "167.hAGaoMGcv.i0AHv.DTfAGfPBJr.CTQWdvU1UyUmXzkGbkwUag4VclE1XzUmbkIGUjEFcgQkag0VYWYWYxMWZu4lDgUmY3IAZvE1bRDFbvw1SPvA..............H......DwfZz....DvuS5DvXUkazkFcrUFYP..BUngHuPSNAYzRP8Fd........AD..........M....................nG"
 										}
+,
+										"snapshotlist" : 										{
+											"current_snapshot" : 0,
+											"entries" : [ 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "AUHipass.auinfo",
+													"origin" : "AUHipass.auinfo",
+													"type" : "AudioUnit",
+													"subtype" : "AudioEffect",
+													"embed" : 0,
+													"snapshot" : 													{
+														"pluginname" : "AUHipass.auinfo",
+														"plugindisplayname" : "AUHipass",
+														"pluginsavedname" : "AUHipass",
+														"pluginsaveduniqueid" : 0,
+														"version" : 1,
+														"isbank" : 0,
+														"isbase64" : 1,
+														"sliderorder" : [ 0, 1 ],
+														"slidervisibility" : [ 1, 1 ],
+														"blob" : "167.hAGaoMGcv.i0AHv.DTfAGfPBJr.CTQWdvU1UyUmXzkGbkwUag4VclE1XzUmbkIGUjEFcgQkag0VYWYWYxMWZu4lDgUmY3IAZvE1bRDFbvw1SPvA..............H......DwfZz....DvuS5DvXUkazkFcrUFYP..BUngHuPSNAYzRP8Fd........AD..........M....................nG"
+													}
+,
+													"fileref" : 													{
+														"name" : "AUHipass.auinfo",
+														"filename" : "AUHipass.auinfo_20160816_1.maxsnap",
+														"filepath" : "~/Documents/Max 7/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "6f3f9d3028094b40a54c3a5d4c5fd614"
+													}
+
+												}
+ ]
+										}
 
 									}
 ,
 									"style" : "",
 									"text" : "vst~ AUHipass.auinfo",
+									"varname" : "vst~",
 									"viewvisibility" : 1
 								}
 
@@ -42046,8 +42208,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -42207,7 +42369,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u523005638"
+													"varname" : "u409005634"
 												}
 
 											}
@@ -42799,8 +42961,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -42851,8 +43013,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -43012,7 +43174,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u803005636"
+													"varname" : "u437005632"
 												}
 
 											}
@@ -43586,8 +43748,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -43621,6 +43783,7 @@
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
 								"box" : 								{
+									"autosave" : 1,
 									"bgmode" : 0,
 									"border" : 0,
 									"clickthrough" : 0,
@@ -43634,33 +43797,73 @@
 									"presentation_rect" : [ 0.0, 0.0, 300.0, 100.0 ],
 									"save" : [ "#N", "vst~", "loaduniqueid", 0, "AUFilter.auinfo", ";" ],
 									"saved_object_attributes" : 									{
+										"annotation_name" : "",
 										"parameter_enable" : 0
 									}
 ,
 									"snapshot" : 									{
 										"filetype" : "C74Snapshot",
-										"version" : 1,
-										"name" : "AUFilter.auinfo",
-										"origin" : "AUFilter.auinfo",
-										"type" : "AudioUnit",
-										"subtype" : "AudioEffect",
+										"version" : 2,
+										"minorversion" : 0,
+										"name" : "snapshotlist",
+										"origin" : "vst~",
+										"type" : "list",
+										"subtype" : "Undefined",
+										"embed" : 1,
 										"snapshot" : 										{
 											"pluginname" : "AUFilter.auinfo",
 											"plugindisplayname" : "AUFilter",
-											"pluginsavedname" : "AUFilter.auinfo",
+											"pluginsavedname" : "AUFilter",
 											"pluginsaveduniqueid" : 0,
 											"version" : 1,
 											"isbank" : 0,
 											"isbase64" : 1,
 											"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
 											"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
-											"blob" : "289.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3vVFIWYwUWYtMVdOsDUzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXWYWYxMWZu41UyUmXzkGbkAQ.RDVclgmDgAGbrgUUtQWZzwVYj8DDDB..............O...............ALDMKPN...f.AoloHA...L.Qb.D.....D.........PA.A.......XPQb.D.....G..........B.A.......jPQbBD.....J.........vB.A.......v..........MXDG.A....fC......A.RXVZrQGBWLBJ0nyOG8TTVsEYq2N.......P.A.........vC....................xCY‰"
+											"blob" : "289.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3vVFIWYwUWYtMVdOsDUzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXWYWYxMWZu41UyUmXzkGbkAQ.RDVclgmDgAGbrgUUtQWZzwVYj8DDDB..............O...............ALDMKPN...f.AoloHA...L.Qb.D.....D.........PA.A.......XPQb.D.....G..........B.A.......jPQbBD.....J.........vB.A.......v..........MXDG.A....fC......A.RXVZrQGBWLBJ0nyOG8TTVsEYq2N.......P.A.........vC....................xC"
+										}
+,
+										"snapshotlist" : 										{
+											"current_snapshot" : 0,
+											"entries" : [ 												{
+													"filetype" : "C74Snapshot",
+													"version" : 2,
+													"minorversion" : 0,
+													"name" : "AUFilter.auinfo",
+													"origin" : "AUFilter.auinfo",
+													"type" : "AudioUnit",
+													"subtype" : "AudioEffect",
+													"embed" : 0,
+													"snapshot" : 													{
+														"pluginname" : "AUFilter.auinfo",
+														"plugindisplayname" : "AUFilter",
+														"pluginsavedname" : "AUFilter",
+														"pluginsaveduniqueid" : 0,
+														"version" : 1,
+														"isbank" : 0,
+														"isbase64" : 1,
+														"sliderorder" : [ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14 ],
+														"slidervisibility" : [ 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 ],
+														"blob" : "289.hAGaoMGcv.y0AHv.DTfAGfPBJr.CM3vVFIWYwUWYtMVdOsDUzkGbkwUag4VclE1XzUmbkIGUtEVakQEYgQWXWYWYxMWZu41UyUmXzkGbkAQ.RDVclgmDgAGbrgUUtQWZzwVYj8DDDB..............O...............ALDMKPN...f.AoloHA...L.Qb.D.....D.........PA.A.......XPQb.D.....G..........B.A.......jPQbBD.....J.........vB.A.......v..........MXDG.A....fC......A.RXVZrQGBWLBJ0nyOG8TTVsEYq2N.......P.A.........vC....................xC"
+													}
+,
+													"fileref" : 													{
+														"name" : "AUFilter.auinfo",
+														"filename" : "AUFilter.auinfo_20160816.maxsnap",
+														"filepath" : "~/Documents/Max 7/Snapshots",
+														"filepos" : -1,
+														"snapshotfileid" : "03ef5d8cdb083c1198f34ee859656171"
+													}
+
+												}
+ ]
 										}
 
 									}
 ,
 									"style" : "",
 									"text" : "vst~ AUFilter.auinfo",
+									"varname" : "vst~",
 									"viewvisibility" : 1
 								}
 
@@ -43684,8 +43887,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -43845,7 +44048,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u591005634"
+													"varname" : "u493005630"
 												}
 
 											}
@@ -44437,8 +44640,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -44489,8 +44692,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -44650,7 +44853,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u442005632"
+													"varname" : "u923005628"
 												}
 
 											}
@@ -45224,8 +45427,8 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 7,
-							"minor" : 0,
-							"revision" : 5,
+							"minor" : 2,
+							"revision" : 3,
 							"architecture" : "x86",
 							"modernui" : 1
 						}
@@ -45276,8 +45479,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 7,
-											"minor" : 0,
-											"revision" : 5,
+											"minor" : 2,
+											"revision" : 3,
 											"architecture" : "x86",
 											"modernui" : 1
 										}
@@ -45437,7 +45640,7 @@
 ,
 													"style" : "",
 													"text" : "autopattr",
-													"varname" : "u998005630"
+													"varname" : "u282005626"
 												}
 
 											}
@@ -46008,21 +46211,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formantcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"pitchcorrection" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
 									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
 									"followglobaltempo" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
+									"formant" : [ 1.0 ],
 									"speed" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"originaltempo" : [ 120.0 ]
 								}
 
 							}
@@ -46051,21 +46254,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formantcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"pitchcorrection" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
 									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
 									"followglobaltempo" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
+									"formant" : [ 1.0 ],
 									"speed" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"originaltempo" : [ 120.0 ]
 								}
 
 							}
@@ -46094,21 +46297,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formantcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"pitchcorrection" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
 									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
 									"followglobaltempo" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
+									"formant" : [ 1.0 ],
 									"speed" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"originaltempo" : [ 120.0 ]
 								}
 
 							}
@@ -46137,21 +46340,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formantcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"pitchcorrection" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
 									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
 									"followglobaltempo" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
+									"formant" : [ 1.0 ],
 									"speed" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"originaltempo" : [ 120.0 ]
 								}
 
 							}
@@ -46180,21 +46383,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formantcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"pitchcorrection" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
 									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
 									"followglobaltempo" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
+									"formant" : [ 1.0 ],
 									"speed" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"originaltempo" : [ 120.0 ]
 								}
 
 							}
@@ -46223,21 +46426,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formantcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"pitchcorrection" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
 									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
 									"followglobaltempo" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
+									"formant" : [ 1.0 ],
 									"speed" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"originaltempo" : [ 120.0 ]
 								}
 
 							}
@@ -46266,21 +46469,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formantcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"pitchcorrection" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
 									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
 									"followglobaltempo" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
+									"formant" : [ 1.0 ],
 									"speed" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"originaltempo" : [ 120.0 ]
 								}
 
 							}
@@ -46309,21 +46512,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formantcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"pitchcorrection" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
 									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
 									"followglobaltempo" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
+									"formant" : [ 1.0 ],
 									"speed" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"originaltempo" : [ 120.0 ]
 								}
 
 							}
@@ -46352,21 +46555,21 @@
 								"filekind" : "audiofile",
 								"loop" : 1,
 								"content_state" : 								{
-									"formantcorrection" : [ 0 ],
-									"formant" : [ 1.0 ],
-									"basictuning" : [ 440 ],
-									"quality" : [ "basic" ],
-									"slurtime" : [ 0.0 ],
-									"pitchcorrection" : [ 0 ],
 									"pitchshift" : [ 1.0 ],
+									"pitchcorrection" : [ 0 ],
+									"play" : [ 0 ],
+									"quality" : [ "basic" ],
 									"originallength" : [ 0.0, "ticks" ],
-									"mode" : [ "basic" ],
 									"followglobaltempo" : [ 0 ],
-									"originaltempo" : [ 120.0 ],
+									"formant" : [ 1.0 ],
 									"speed" : [ 1.0 ],
 									"timestretch" : [ 0 ],
 									"originallengthms" : [ 0.0 ],
-									"play" : [ 0 ]
+									"slurtime" : [ 0.0 ],
+									"formantcorrection" : [ 0 ],
+									"mode" : [ "basic" ],
+									"basictuning" : [ 440 ],
+									"originaltempo" : [ 120.0 ]
 								}
 
 							}
@@ -47994,69 +48197,39 @@
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "agua-aves-denoizer.wav",
-				"bootpath" : "~/Desktop/Audio Files",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "aves.wav",
-				"bootpath" : "~/Desktop/Audio Files",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "aves-denoizer.wav",
-				"bootpath" : "~/Desktop/Audio Files",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Q-Delicias-Agua.wav",
-				"bootpath" : "~/Desktop/Audio Files",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "Q-Delicias-Agua+Aves.wav",
-				"bootpath" : "~/Desktop/Audio Files",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "agua-noize.wav",
-				"bootpath" : "~/Desktop/Audio Files",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "agua-aves.wav",
-				"bootpath" : "~/Desktop/Audio Files",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "agua.wav",
-				"bootpath" : "~/Desktop/Audio Files",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "aguagudo.wav",
-				"bootpath" : "~/Desktop/Audio Files",
-				"type" : "WAVE",
-				"implicit" : 1
-			}
-, 			{
 				"name" : "freqScale.maxpat",
-				"bootpath" : "~/Desktop/ContrasteSonoro/FinalProject/Single Mac/MAX",
+				"bootpath" : "~/Developer/Contraste Sonoro/FinalProject/Single Mac/MAX",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "Q-MZL.wav",
-				"bootpath" : "~/Desktop/Audio Files",
-				"type" : "WAVE",
+				"name" : "AUFilter.auinfo_20160816.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "AUHipass.auinfo_20160816_1.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "AUHipass.auinfo_20160816.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "AUFilter.auinfo.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"type" : "mx@s",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "AUHipass.auinfo.maxsnap",
+				"bootpath" : "~/Documents/Max 7/Snapshots",
+				"type" : "mx@s",
 				"implicit" : 1
 			}
 , 			{
@@ -48064,7 +48237,7 @@
 				"type" : "iLaX"
 			}
  ],
-		"embedsnapshot" : 0
+		"autosave" : 0
 	}
 
 }
