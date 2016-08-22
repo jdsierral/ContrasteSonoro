@@ -40,7 +40,8 @@ void kinectAnalisis()
 
   for (int i = 0; i < kinectSize; i++)
   {
-    if (abs(depth[i] - meanDepth[i]) <= accuracy * stndDepth[i])
+    if (abs(depth[i] - meanDepth[i]) <= (accuracy * stndDepth[i]) || 
+    depth[i] > maxDist)
     {
       depth[i] = 2048;
     }

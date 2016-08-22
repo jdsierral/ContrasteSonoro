@@ -111,20 +111,21 @@ PVector mousePos = new PVector(0,0,0);
 //////////////////////////////////KINECT STUFF///////////////////////////////
 //=========================================================================//
 
+/////////////(Cambiar a dependiendo de la instalación)//////////////
 int meanSize = 100;
 int meanLength = 50;
 int meanFactor = 5; // change later to 3 at least
-
-/////////////(Cambiar a dependiendo de la instalación)//////////////
-int deg = 21; //Ángulo Inicial de inclinación del Kinect  
+int maxDist = 980; 
+int deg = 20; //Ángulo Inicial de inclinación del Kinect  
 float accuracy = 25;
+////////////////////////////////////////////////////////////////////
 
 int kinectSize = 307200; //Tamaño del frame en pixeles
 int kinectWidth = 640; //Anchura del frame
 int kinectHeight = 480; //Altura del frame
 
 int[] depth = new int[kinectSize]; 
-//Vector que alberca el mapa de profundidades 
+//Vector que alberga el mapa de profundidades 
 int[] meanDepth = new int[kinectSize]; 
 //Vector que alberga el mapa del promedio de las profundidades
 float[] stndDepth = new float[kinectSize]; 

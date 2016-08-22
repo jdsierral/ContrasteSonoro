@@ -43,8 +43,16 @@ void keyPressed()
     break;
   case ' '  :
     kinectFrame = ++kinectFrame % 4;
-    println(kinectFrame);
+    println("KinectFrame : " + kinectFrame);
     break;
+  case '.' :
+    maxDist += 50;
+    println("Max Distance: " + maxDist);
+    break;
+  case ',' :
+    maxDist -= 50;
+    println("Max Distance: " + maxDist);
+    break; 
   case CODED  :
     switch (keyCode)
     {
